@@ -1,12 +1,17 @@
-[2021-01-18 21:36:14] local.ERROR: Invalid argument supplied for foreach() (View: C:\www\jetx\resources\views\home.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Invalid argument supplied for foreach() (View: C:\\www\\jetx\esources\\views\\home.blade.php) at C:\\www\\jetx\esources\\views/home.blade.php:17)
+[2021-01-18 21:36:14] local.ERROR: Invalid argument supplied for foreach() (View: C:\www\jetx\resources\views\home.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Invalid argument supplied for foreach() (View: C:\\www\\jetx\
+esources\\views\\home.blade.php) at C:\\www\\jetx\
+esources\\views/home.blade.php:17)
 [stacktrace]
-#0 C:\\www\\jetx\esources\\views/home.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Invalid argumen...', 'C:\\\\www\\\\jetx\\\\sto...', 17, Array)
+#0 C:\\www\\jetx\
+esources\\views/home.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Invalid argumen...', 'C:\\\\www\\\\jetx\\\\sto...', 17, Array)
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -60,8 +65,10 @@
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -108,15 +115,20 @@
 #50 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 {main}
 "} 
-[2021-01-18 21:37:02] local.ERROR: Invalid argument supplied for foreach() (View: C:\www\jetx\resources\views\home.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Invalid argument supplied for foreach() (View: C:\\www\\jetx\esources\\views\\home.blade.php) at C:\\www\\jetx\esources\\views/home.blade.php:17)
+[2021-01-18 21:37:02] local.ERROR: Invalid argument supplied for foreach() (View: C:\www\jetx\resources\views\home.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Invalid argument supplied for foreach() (View: C:\\www\\jetx\
+esources\\views\\home.blade.php) at C:\\www\\jetx\
+esources\\views/home.blade.php:17)
 [stacktrace]
-#0 C:\\www\\jetx\esources\\views/home.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Invalid argumen...', 'C:\\\\www\\\\jetx\\\\sto...', 17, Array)
+#0 C:\\www\\jetx\
+esources\\views/home.blade.php(17): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(2, 'Invalid argumen...', 'C:\\\\www\\\\jetx\\\\sto...', 17, Array)
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -170,8 +182,10 @@
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -218,15 +232,20 @@
 #50 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 {main}
 "} 
-[2021-01-18 21:37:59] local.ERROR: Undefined variable: categoria (View: C:\www\jetx\resources\views\home.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: categoria (View: C:\\www\\jetx\esources\\views\\home.blade.php) at C:\\www\\jetx\esources\\views/home.blade.php:19)
+[2021-01-18 21:37:59] local.ERROR: Undefined variable: categoria (View: C:\www\jetx\resources\views\home.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: categoria (View: C:\\www\\jetx\
+esources\\views\\home.blade.php) at C:\\www\\jetx\
+esources\\views/home.blade.php:19)
 [stacktrace]
-#0 C:\\www\\jetx\esources\\views/home.blade.php(19): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\www\\\\jetx\\\\sto...', 19, Array)
+#0 C:\\www\\jetx\
+esources\\views/home.blade.php(19): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\www\\\\jetx\\\\sto...', 19, Array)
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -280,8 +299,10 @@
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -328,34 +349,44 @@
 #50 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #51 {main}
 "} 
-[2021-01-18 21:38:40] local.ERROR: Route [home] not defined. (View: C:\www\jetx\resources\views\components\menuResponsive.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [home] not defined. (View: C:\\www\\jetx\esources\\views\\components\\menuResponsive.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
+[2021-01-18 21:38:40] local.ERROR: Route [home] not defined. (View: C:\www\jetx\resources\views\components\menuResponsive.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [home] not defined. (View: C:\\www\\jetx\
+esources\\views\\components\\menuResponsive.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
 [stacktrace]
 #0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(708): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
-#1 C:\\www\\jetx\esources\\views/components/menuResponsive.blade.php(9): route('home')
+#1 C:\\www\\jetx\
+esources\\views/components/menuResponsive.blade.php(9): route('home')
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#10 C:\\www\\jetx\esources\\views/layouts/layout.blade.php(6): Illuminate\\View\\View->render()
+#10 C:\\www\\jetx\
+esources\\views/layouts/layout.blade.php(6): Illuminate\\View\\View->render()
 #11 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#19 C:\\www\\jetx\esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
+#19 C:\\www\\jetx\
+esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #28 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -410,8 +441,10 @@
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #10 C:\\www\\jetx\\storage\\framework\\views\\600b0bf911471944038962469eda4286271a659e.php(6): Illuminate\\View\\View->render()
@@ -419,8 +452,10 @@
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #19 C:\\www\\jetx\\storage\\framework\\views\\569b419f7d0b338de342071c598e21bf0ca2a760.php(28): Illuminate\\View\\View->render()
@@ -428,8 +463,10 @@
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #28 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -476,34 +513,44 @@
 #69 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #70 {main}
 "} 
-[2021-01-18 21:42:01] local.ERROR: Route [home] not defined. (View: C:\www\jetx\resources\views\components\menuResponsive.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [home] not defined. (View: C:\\www\\jetx\esources\\views\\components\\menuResponsive.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
+[2021-01-18 21:42:01] local.ERROR: Route [home] not defined. (View: C:\www\jetx\resources\views\components\menuResponsive.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [home] not defined. (View: C:\\www\\jetx\
+esources\\views\\components\\menuResponsive.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
 [stacktrace]
 #0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(708): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
-#1 C:\\www\\jetx\esources\\views/components/menuResponsive.blade.php(9): route('home')
+#1 C:\\www\\jetx\
+esources\\views/components/menuResponsive.blade.php(9): route('home')
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#10 C:\\www\\jetx\esources\\views/layouts/layout.blade.php(6): Illuminate\\View\\View->render()
+#10 C:\\www\\jetx\
+esources\\views/layouts/layout.blade.php(6): Illuminate\\View\\View->render()
 #11 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#19 C:\\www\\jetx\esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
+#19 C:\\www\\jetx\
+esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #28 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -558,8 +605,10 @@
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #10 C:\\www\\jetx\\storage\\framework\\views\\600b0bf911471944038962469eda4286271a659e.php(6): Illuminate\\View\\View->render()
@@ -567,8 +616,10 @@
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #19 C:\\www\\jetx\\storage\\framework\\views\\569b419f7d0b338de342071c598e21bf0ca2a760.php(28): Illuminate\\View\\View->render()
@@ -576,8 +627,10 @@
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #28 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -624,34 +677,44 @@
 #69 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #70 {main}
 "} 
-[2021-01-18 21:52:12] local.ERROR: Route [home] not defined. (View: C:\www\jetx\resources\views\components\menuResponsive.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [home] not defined. (View: C:\\www\\jetx\esources\\views\\components\\menuResponsive.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
+[2021-01-18 21:52:12] local.ERROR: Route [home] not defined. (View: C:\www\jetx\resources\views\components\menuResponsive.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [home] not defined. (View: C:\\www\\jetx\
+esources\\views\\components\\menuResponsive.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
 [stacktrace]
 #0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(708): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
-#1 C:\\www\\jetx\esources\\views/components/menuResponsive.blade.php(9): route('home')
+#1 C:\\www\\jetx\
+esources\\views/components/menuResponsive.blade.php(9): route('home')
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#10 C:\\www\\jetx\esources\\views/layouts/layout.blade.php(6): Illuminate\\View\\View->render()
+#10 C:\\www\\jetx\
+esources\\views/layouts/layout.blade.php(6): Illuminate\\View\\View->render()
 #11 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#19 C:\\www\\jetx\esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
+#19 C:\\www\\jetx\
+esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #28 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -706,8 +769,10 @@
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #10 C:\\www\\jetx\\storage\\framework\\views\\600b0bf911471944038962469eda4286271a659e.php(6): Illuminate\\View\\View->render()
@@ -715,8 +780,10 @@
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #19 C:\\www\\jetx\\storage\\framework\\views\\569b419f7d0b338de342071c598e21bf0ca2a760.php(28): Illuminate\\View\\View->render()
@@ -724,8 +791,10 @@
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #28 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -772,26 +841,33 @@
 #69 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #70 {main}
 "} 
-[2021-01-18 21:54:16] local.ERROR: View [components.busqueda] not found. (View: C:\www\jetx\resources\views\layouts\layout.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): View [components.busqueda] not found. (View: C:\\www\\jetx\esources\\views\\layouts\\layout.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
+[2021-01-18 21:54:16] local.ERROR: View [components.busqueda] not found. (View: C:\www\jetx\resources\views\layouts\layout.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): View [components.busqueda] not found. (View: C:\\www\\jetx\
+esources\\views\\layouts\\layout.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php:137)
 [stacktrace]
 #0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\FileViewFinder.php(79): Illuminate\\View\\FileViewFinder->findInPaths('components.busq...', Array)
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Factory.php(138): Illuminate\\View\\FileViewFinder->find('components.busq...')
-#2 C:\\www\\jetx\esources\\views/layouts/layout.blade.php(7): Illuminate\\View\\Factory->make('components.busq...', Array)
+#2 C:\\www\\jetx\
+esources\\views/layouts/layout.blade.php(7): Illuminate\\View\\Factory->make('components.busq...', Array)
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#7 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#7 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #10 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#11 C:\\www\\jetx\esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
+#11 C:\\www\\jetx\
+esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #15 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#16 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#16 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #19 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -847,8 +923,10 @@
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#7 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#7 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #10 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #11 C:\\www\\jetx\\storage\\framework\\views\\569b419f7d0b338de342071c598e21bf0ca2a760.php(28): Illuminate\\View\\View->render()
@@ -856,8 +934,10 @@
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #15 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#16 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#16 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #19 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -904,34 +984,44 @@
 #61 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #62 {main}
 "} 
-[2021-01-18 21:54:35] local.ERROR: Route [home] not defined. (View: C:\www\jetx\resources\views\components\header.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [home] not defined. (View: C:\\www\\jetx\esources\\views\\components\\header.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
+[2021-01-18 21:54:35] local.ERROR: Route [home] not defined. (View: C:\www\jetx\resources\views\components\header.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Route [home] not defined. (View: C:\\www\\jetx\
+esources\\views\\components\\header.blade.php) at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Routing\\UrlGenerator.php:429)
 [stacktrace]
 #0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\helpers.php(708): Illuminate\\Routing\\UrlGenerator->route('home', Array, true)
-#1 C:\\www\\jetx\esources\\views/components/header.blade.php(4): route('home')
+#1 C:\\www\\jetx\
+esources\\views/components/header.blade.php(4): route('home')
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#10 C:\\www\\jetx\esources\\views/layouts/layout.blade.php(42): Illuminate\\View\\View->render()
+#10 C:\\www\\jetx\
+esources\\views/layouts/layout.blade.php(42): Illuminate\\View\\View->render()
 #11 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#19 C:\\www\\jetx\esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
+#19 C:\\www\\jetx\
+esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #28 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -986,8 +1076,10 @@
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#6 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #10 C:\\www\\jetx\\storage\\framework\\views\\600b0bf911471944038962469eda4286271a659e.php(42): Illuminate\\View\\View->render()
@@ -995,8 +1087,10 @@
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#15 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #19 C:\\www\\jetx\\storage\\framework\\views\\569b419f7d0b338de342071c598e21bf0ca2a760.php(28): Illuminate\\View\\View->render()
@@ -1004,8 +1098,10 @@
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#24 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #28 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -1052,32 +1148,42 @@
 #69 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #70 {main}
 "} 
-[2021-01-19 00:33:42] local.ERROR: Call to undefined function setActive() (View: C:\www\jetx\resources\views\components\header.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function setActive() (View: C:\\www\\jetx\esources\\views\\components\\header.blade.php) at C:\\www\\jetx\esources\\views/components/header.blade.php:28)
+[2021-01-19 00:33:42] local.ERROR: Call to undefined function setActive() (View: C:\www\jetx\resources\views\components\header.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function setActive() (View: C:\\www\\jetx\
+esources\\views\\components\\header.blade.php) at C:\\www\\jetx\
+esources\\views/components/header.blade.php:28)
 [stacktrace]
 #0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require()
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#4 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#4 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#8 C:\\www\\jetx\esources\\views/layouts/layout.blade.php(42): Illuminate\\View\\View->render()
+#8 C:\\www\\jetx\
+esources\\views/layouts/layout.blade.php(42): Illuminate\\View\\View->render()
 #9 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #10 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #11 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#13 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#13 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #15 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#17 C:\\www\\jetx\esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
+#17 C:\\www\\jetx\
+esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
 #18 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #19 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#22 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#22 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #24 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -1130,8 +1236,10 @@
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#4 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#4 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #8 C:\\www\\jetx\\storage\\framework\\views\\600b0bf911471944038962469eda4286271a659e.php(42): Illuminate\\View\\View->render()
@@ -1139,8 +1247,10 @@
 #10 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #11 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#13 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#13 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#14 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #15 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #17 C:\\www\\jetx\\storage\\framework\\views\\569b419f7d0b338de342071c598e21bf0ca2a760.php(28): Illuminate\\View\\View->render()
@@ -1148,8 +1258,10 @@
 #19 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#22 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#22 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#23 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #24 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -1196,33 +1308,44 @@
 #67 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #68 {main}
 "} 
-[2021-01-19 00:35:06] local.ERROR: Undefined variable: categoria (View: C:\www\jetx\resources\views\components\header.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: categoria (View: C:\\www\\jetx\esources\\views\\components\\header.blade.php) at C:\\www\\jetx\esources\\views/components/header.blade.php:33)
+[2021-01-19 00:35:06] local.ERROR: Undefined variable: categoria (View: C:\www\jetx\resources\views\components\header.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Undefined variable: categoria (View: C:\\www\\jetx\
+esources\\views\\components\\header.blade.php) at C:\\www\\jetx\
+esources\\views/components/header.blade.php:33)
 [stacktrace]
-#0 C:\\www\\jetx\esources\\views/components/header.blade.php(33): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\www\\\\jetx\\\\sto...', 33, Array)
+#0 C:\\www\\jetx\
+esources\\views/components/header.blade.php(33): Illuminate\\Foundation\\Bootstrap\\HandleExceptions->handleError(8, 'Undefined varia...', 'C:\\\\www\\\\jetx\\\\sto...', 33, Array)
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#9 C:\\www\\jetx\esources\\views/layouts/layout.blade.php(42): Illuminate\\View\\View->render()
+#9 C:\\www\\jetx\
+esources\\views/layouts/layout.blade.php(42): Illuminate\\View\\View->render()
 #10 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #11 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#14 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#15 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#14 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#15 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
-#18 C:\\www\\jetx\esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
+#18 C:\\www\\jetx\
+esources\\views/home.blade.php(28): Illuminate\\View\\View->render()
 #19 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require('C:\\\\www\\\\jetx\\\\sto...')
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#23 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#24 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#23 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#24 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -1276,8 +1399,10 @@
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#5 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #9 C:\\www\\jetx\\storage\\framework\\views\\600b0bf911471944038962469eda4286271a659e.php(42): Illuminate\\View\\View->render()
@@ -1285,8 +1410,10 @@
 #11 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #12 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #13 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#14 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#15 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#14 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#15 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #16 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #17 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #18 C:\\www\\jetx\\storage\\framework\\views\\569b419f7d0b338de342071c598e21bf0ca2a760.php(28): Illuminate\\View\\View->render()
@@ -1294,8 +1421,10 @@
 #20 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #21 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #22 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#23 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#24 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#23 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#24 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #25 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #26 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #27 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -1342,14 +1471,19 @@
 #68 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #69 {main}
 "} 
-[2021-01-19 02:27:31] local.ERROR: Call to undefined function sortByActive() (View: C:\www\jetx\resources\views\rotacion.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function sortByActive() (View: C:\\www\\jetx\esources\\views\otacion.blade.php) at C:\\www\\jetx\esources\\views/rotacion.blade.php:38)
+[2021-01-19 02:27:31] local.ERROR: Call to undefined function sortByActive() (View: C:\www\jetx\resources\views\rotacion.blade.php) {"exception":"[object] (Facade\\Ignition\\Exceptions\\ViewException(code: 0): Call to undefined function sortByActive() (View: C:\\www\\jetx\
+esources\\views\
+otacion.blade.php) at C:\\www\\jetx\
+esources\\views/rotacion.blade.php:38)
 [stacktrace]
 #0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(107): require()
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#4 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#4 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -1402,8 +1536,10 @@
 #1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Filesystem\\Filesystem.php(108): Illuminate\\Filesystem\\Filesystem::Illuminate\\Filesystem\\{closure}()
 #2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\PhpEngine.php(58): Illuminate\\Filesystem\\Filesystem->getRequire('C:\\\\www\\\\jetx\\\\sto...', Array)
 #3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\Engines\\CompilerEngine.php(61): Illuminate\\View\\Engines\\PhpEngine->evaluatePath('C:\\\\www\\\\jetx\\\\sto...', Array)
-#4 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
-#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\es...', Array)
+#4 C:\\www\\jetx\\vendor\\facade\\ignition\\src\\Views\\Engines\\CompilerEngine.php(37): Illuminate\\View\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(139): Facade\\Ignition\\Views\\Engines\\CompilerEngine->get('C:\\\\www\\\\jetx\\\
+es...', Array)
 #6 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(122): Illuminate\\View\\View->getContents()
 #7 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\View\\View.php(91): Illuminate\\View\\View->renderContents()
 #8 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Http\\Response.php(62): Illuminate\\View\\View->render()
@@ -1449,4 +1585,204 @@
 #48 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Http\\Kernel.php(110): Illuminate\\Foundation\\Http\\Kernel->sendRequestThroughRouter(Object(Illuminate\\Http\\Request))
 #49 C:\\www\\jetx\\public\\index.php(52): Illuminate\\Foundation\\Http\\Kernel->handle(Object(Illuminate\\Http\\Request))
 #50 {main}
+"} 
+[2021-01-19 06:38:29] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 C:\\www\\jetx\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:38:29] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 C:\\www\\jetx\\artisan(37): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:39:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:39:08] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:39:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:39:08] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:40:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:40:08] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:40:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:40:08] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:41:09] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:41:09] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:41:09] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:41:09] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:42:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:42:08] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:43:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:43:08] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
+"} 
+[2021-01-19 06:43:08] laravel.EMERGENCY: Unable to create configured logger. Using emergency logger. {"exception":"[object] (InvalidArgumentException(code: 0): Log [] is not defined. at C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php:192)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(118): Illuminate\\Log\\LogManager->resolve(NULL)
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(98): Illuminate\\Log\\LogManager->get(NULL)
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Log\\LogManager.php(551): Illuminate\\Log\\LogManager->driver()
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Exceptions\\Handler.php(238): Illuminate\\Log\\LogManager->error('syntax error, u...', Array)
+#4 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(366): Illuminate\\Foundation\\Exceptions\\Handler->report(Object(ParseError))
+#5 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(131): Illuminate\\Foundation\\Console\\Kernel->reportException(Object(ParseError))
+#6 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#7 {main}
+"} 
+[2021-01-19 06:43:08] laravel.ERROR: syntax error, unexpected '<<' (T_SL), expecting ']' {"exception":"[object] (ParseError(code: 0): syntax error, unexpected '<<' (T_SL), expecting ']' at C:\\www\\jetx\\config\\app.php:16)
+[stacktrace]
+#0 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Bootstrap\\LoadConfiguration.php(39): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->loadConfigurationFiles(Object(Illuminate\\Foundation\\Application), Object(Illuminate\\Config\\Repository))
+#1 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Application.php(230): Illuminate\\Foundation\\Bootstrap\\LoadConfiguration->bootstrap(Object(Illuminate\\Foundation\\Application))
+#2 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(310): Illuminate\\Foundation\\Application->bootstrapWith(Array)
+#3 C:\\www\\jetx\\vendor\\laravel\\framework\\src\\Illuminate\\Foundation\\Console\\Kernel.php(127): Illuminate\\Foundation\\Console\\Kernel->bootstrap()
+#4 Command line code(1): Illuminate\\Foundation\\Console\\Kernel->handle(Object(Symfony\\Component\\Console\\Input\\ArgvInput), Object(Symfony\\Component\\Console\\Output\\ConsoleOutput))
+#5 {main}
 "} 
