@@ -7,14 +7,18 @@
         <div class="scroll-menu-main">
             <ul id="menu-main" class="menu-main menu">
                 <li class="menu-item active"><a href="{{ route('home') }}"><span>Home</span></a></li>
-                <li class="menu-item"><a href="{{ route('productos.index') }}" class="menu-main__link"><span>Productos</span></a></li>
                 @if(session()->has('categoria'))
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-producto"><span>Categorías</span><i class="fas fa-angle-double-right"></i></a></li>
+                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-producto"><span>Patinaje</span><i class="fas fa-angle-double-right"></i></a></li>
                 @endif
                 @if(session()->has('coleccion'))
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Colecciones</span><i class="fas fa-angle-double-right"></i></a></li>
+                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Fútbol</span><i class="fas fa-angle-double-right"></i></a></li>
                 @endif
-                <li class="menu-item"><a href="{{ route('about') }}"><span>About Us</span></a></li>
+                @if(session()->has('coleccion'))
+                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Baloncesto</span><i class="fas fa-angle-double-right"></i></a></li>
+                @endif
+                @if(session()->has('coleccion'))
+                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Tennis</span><i class="fas fa-angle-double-right"></i></a></li>
+                @endif
                 <li class="menu-item iniciar-sesion"><a href="#"><span>Iniciar Sesión / Registro</span></a></li>
             </ul>
         </div>

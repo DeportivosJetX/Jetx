@@ -1,3 +1,8 @@
+<<<<<<< HEAD
 *
 !.gitignore
 
+=======
+#*
+#!.gitignore
+>>>>>>> 084bda17da6f8b7aebf757f5b6ec258983920660

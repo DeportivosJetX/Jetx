@@ -3,9 +3,8 @@
 @include('components/head')
 <body>
     <div class="contenedor">
-        @include('components/menuResponsive')
-        @include('components/carritoDesplegable')
-        @include('components/busqueda')
+        {{-- @include('components/menuResponsive') --}}
+        {{-- @include('components/busqueda') --}}
         <div class="contenedor-inicio-sesion">
             <div class="contenedor-inicio-sesion__scroll">
                 <div class="contenedor-formulario">

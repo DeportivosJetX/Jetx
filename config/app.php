@@ -52,7 +52,7 @@ return [
     |
     */
 
-    'url' => env('APP_URL', 'http://jetx.com'),
+    'url' => env('APP_URL', 'http://www.jetx.com'),
 
     'asset_url' => env('ASSET_URL', null),
 
