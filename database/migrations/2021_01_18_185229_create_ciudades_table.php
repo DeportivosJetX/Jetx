@@ -16,6 +16,7 @@ class CreateCiudadesTable extends Migration
         Schema::create('ciudades', function (Blueprint $table) {
             $table->smallIncrements('id');
             $table->string('nombre',40);
+            $table->string('slug',100)->unique();
             $table->unsignedTinyInteger('id_departamento');
             $table->softDeletes('deleted_at', 0);
             $table->timestamps();
