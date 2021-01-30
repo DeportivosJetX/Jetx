@@ -16,12 +16,12 @@ class CreateProductosTable extends Migration
         Schema::create('productos', function (Blueprint $table) {
             $table->id();
             $table->char('referencia', 10);
-            $table->string('nombre',40);
-            $table->string('slug',100)->unique();
+            $table->string('nombre',100);
+            $table->string('slug',150)->unique();
             $table->decimal('costo', 10, 0);
             $table->text('descripcion');
             $table->string('guia_tallas_img',100)->nullable();
-            $table->enum('publico', ['hombres', 'mujeres', 'niños']);
+            $table->enum('publico', ['hombres', 'mujeres', 'niños','unisex']);
             $table->enum('envio', ['gratis', 'calculado']);
             $table->unsignedTinyInteger('id_categoria');
             $table->unsignedTinyInteger('id_deporte');

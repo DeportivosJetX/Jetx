@@ -5663,7 +5663,6 @@ body {
   grid-template-columns: minmax(min-content, 1fr);
   justify-content: center;
   align-content: center;
-  background-image: url("/storage/images/fire-44.gif");
   background-repeat: repeat;
   background-color: #FC8800;
   background-size: contain;
@@ -5674,11 +5673,11 @@ body {
 
 .banner {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
-  justify-content: space-around;
+  grid-template-columns: 1fr 2fr 1fr;
+  justify-content: space-between;
   align-content: center;
   place-items: center;
-  gap: 3px;
+  gap: 2px;
   width: 100%;
 }
 
@@ -5691,7 +5690,6 @@ body {
   text-align: center;
   width: 20px;
   height: 20px;
-  margin-left: 0.5em;
   display: block;
   border: none;
   background: none;
@@ -5721,17 +5719,16 @@ body {
   align-items: center;
   text-decoration: none;
   color: black;
-  font-size: 0.5rem;
+  font-size: 0.55rem;
 }
 .banner__logo .logo__link h1 {
   margin: 0;
-  font-size: 2em !important;
   font-weight: 700;
   font-family: Arial, Helvetica, sans-serif;
   letter-spacing: -1px;
 }
 .banner__logo .logo__link .logo {
-  width: 60px;
+  width: 30px;
 }
 .banner__logo .logo__link:focus {
   outline: none;
@@ -5743,7 +5740,7 @@ body {
   display: flex;
 }
 .banner__iconos > div {
-  padding: 0 0.3rem;
+  padding: 0 0.15rem;
 }
 
 .icono__user {
@@ -5837,7 +5834,7 @@ body {
 .menu-desktop .menu-desktop__secondlevel {
   display: none;
   position: absolute;
-  width: 15em;
+  width: 8em;
   top: calc(100% + 3px);
   left: 0;
   background: #FFA756;
@@ -5858,6 +5855,10 @@ body {
 }
 .menu-desktop .list-item:hover > .menu-desktop__secondlevel {
   display: block;
+}
+.menu-desktop .menu-desktop__firstlevel .list-item:last-child .menu-desktop__secondlevel {
+  right: 0;
+  left: auto;
 }
 
 /*---------footer--------------*/
@@ -5976,25 +5977,27 @@ body {
   /*---------ir arriba--------------*/
   /*---------header--------------*/
   .contenedor .header {
-    height: 120px;
+    height: 80px;
   }
 
   .fas-link .fas {
-    font-size: 2rem;
+    font-size: 1.5rem;
   }
 
   .banner__logo .logo__link {
-    font-size: 1.1rem;
-    display: flex;
-    align-items: center;
+    font-size: 0.8rem;
   }
   .banner__logo .logo__link .logo {
-    width: 100px;
+    width: 50px;
   }
 
-  .icono__user {
-    display: block;
-    visibility: visible;
+  .banner__iconos > div {
+    padding: 0 0.2rem;
+  }
+
+  .icono__car .fas-link span {
+    top: -11px;
+    right: -18px;
   }
 
   /*---------menu--------------*/
@@ -6069,15 +6072,24 @@ body {
   }
 
   .banner__logo .logo__link {
-    font-size: 1.2rem;
+    font-size: 1rem;
   }
   .banner__logo .logo__link .logo {
-    width: 90px;
+    width: 55px;
+  }
+
+  .banner__iconos > div {
+    padding: 0 0.4rem;
   }
 
   .icono__user {
     display: block;
     visibility: visible;
+  }
+
+  .icono__car .fas-link span {
+    top: -8px;
+    right: -18px;
   }
 
   /*---------menu--------------*/

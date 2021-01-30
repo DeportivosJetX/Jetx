@@ -13,7 +13,7 @@ class CreateDetallePedidosTable extends Migration
      */
     public function up()
     {
-        Schema::create('detalle_pedidios', function (Blueprint $table) {
+        Schema::create('detalle_pedidos', function (Blueprint $table) {
             $table->id();
             $table->UnsignedBigInteger('id_pedido');
             $table->UnsignedBigInteger('id_talla_producto');
@@ -33,6 +33,6 @@ class CreateDetallePedidosTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('detalle_pedidios');
+        Schema::dropIfExists('detalle_pedidos');
     }
 }

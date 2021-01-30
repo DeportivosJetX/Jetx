@@ -15,7 +15,7 @@ class CreateImagenProductosTable extends Migration
     {
         Schema::create('imagen_productos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_produto');
+            $table->unsignedBigInteger('id_producto');
             $table->string('nombre_imagen',100)->unique();
             $table->string('descripcion',70);
             $table->UnsignedTinyInteger('prioridad');

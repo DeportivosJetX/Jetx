@@ -7,19 +7,16 @@
         <div class="scroll-menu-main">
             <ul id="menu-main" class="menu-main menu">
                 <li class="menu-item active"><a href="<?php echo e(route('home')); ?>"><span>Home</span></a></li>
-                <?php if(session()->has('categoria')): ?>
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-producto"><span>Patinaje</span><i class="fas fa-angle-double-right"></i></a></li>
+                <li class="menu-item"><a href="<?php echo e(route('productos.index')); ?>" class="menu-main__link"><span>Productos</span></a></li>
+                <?php if(session()->has('deportes')): ?>
+                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-producto"><span>Deportes</span><i class="fas fa-angle-double-right"></i></a></li>
                 <?php endif; ?>
-                <?php if(session()->has('coleccion')): ?>
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Fútbol</span><i class="fas fa-angle-double-right"></i></a></li>
+                <?php if(session()->has('categorias')): ?>
+                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Categorias</span><i class="fas fa-angle-double-right"></i></a></li>
                 <?php endif; ?>
-                <?php if(session()->has('coleccion')): ?>
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Baloncesto</span><i class="fas fa-angle-double-right"></i></a></li>
-                <?php endif; ?>
-                <?php if(session()->has('coleccion')): ?>
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Tennis</span><i class="fas fa-angle-double-right"></i></a></li>
-                <?php endif; ?>
-                <li class="menu-item iniciar-sesion"><a href="#"><span>Iniciar Sesión / Registro</span></a></li>
+                <li class="menu-item"><a href="<?php echo e(route('rotacion')); ?>" class="menu-main__link"><span>Informe de Rotación</span></a></li>
+                <li class="menu-item"><a href="<?php echo e(route('ingresos')); ?>" class="menu-main__link"><span>Informe de Ingresos</span></a></li>
+                <li class="menu-item iniciar-sesion"><a href="<?php echo e(route('login')); ?>"><span>Iniciar Sesión / Registro</span></a></li>
             </ul>
         </div>
         <div class="menu-categoria" id="menu-categoria">
@@ -28,15 +25,15 @@
             </div>
             <div class="contenedor-scroll">
                 <div class="menu-cat-contenedor">
-                    <?php if(session()->has('categoria')): ?>
-                    <?php $__empty_1 = true; $__currentLoopData = session('categoria'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoria): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                    <a href="<?php echo e(route('productos.indexCategoria',$categoria)); ?>" class="menu-link" style="background-image: url('/storage/<?php echo e($categoria->imagen); ?>');">
+                    <?php if(session()->has('deportes')): ?>
+                    <?php $__empty_1 = true; $__currentLoopData = session('deportes'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $deporte): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                    <a href="" class="menu-link" style="background-image: url('/storage/<?php echo e($deporte->imagen); ?>');">
                         <div class="menu-link__title">
-                            <h3><?php echo e(strtoupper($categoria->nombre)); ?></h3>
+                            <h3><?php echo e(strtoupper($deporte->nombre)); ?></h3>
                         </div>
                     </a>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-                        No hay categorías
+                        No hay deportes
                     <?php endif; ?>
                     <?php endif; ?>
                 </div>
@@ -48,15 +45,15 @@
             </div>
             <div class="contenedor-scroll">
                 <div class="menu-cat-contenedor">
-                    <?php if(session()->has('coleccion')): ?>
-                    <?php $__empty_1 = true; $__currentLoopData = session('coleccion'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $coleccion): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                    <a href="<?php echo e(route('productos.indexColeccion',$coleccion)); ?>" class="menu-link" style="background-image: url('/storage/<?php echo e($coleccion->imagen); ?>');">
+                    <?php if(session()->has('categorias')): ?>
+                    <?php $__empty_1 = true; $__currentLoopData = session('categorias'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoria): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
+                    <a href="" class="menu-link" style="background-image: url('/storage/<?php echo e($categoria->imagen); ?>');">
                         <div class="menu-link__title">
-                            <h3><?php echo e(strtoupper($coleccion->nombre)); ?></h3>
+                            <h3><?php echo e(strtoupper($categoria->nombre)); ?></h3>
                         </div>
                     </a>
                     <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
-                        No hay colecciones
+                        No hay categorias
                     <?php endif; ?>
                     <?php endif; ?>
                 </div>

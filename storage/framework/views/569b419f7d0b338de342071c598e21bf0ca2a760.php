@@ -1,26 +1,26 @@
-
-
-<?php $__env->startSection('title'); ?>
- Home
-<?php $__env->stopSection(); ?>
+<?php $__env->startSection('title', 'HOME'); ?>
 <?php $__env->startSection('css'); ?>
     <link rel="stylesheet" href="<?php echo e(asset('css/home.css')); ?>">
-    <link rel="stylesheet" href="<?php echo e(asset('css/glider.min.css')); ?>">
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('scriptHeader'); ?>
-    <script src="<?php echo e(asset('js/glider.min.js')); ?>"></script>
-    <script src="<?php echo e(asset('js/gliderApp.js')); ?>"></script>
+
 <?php $__env->stopSection(); ?>
+
 <?php $__env->startSection('contenido'); ?>
     <main class="content-home">
         <div class="content">
-            
+            <?php $__empty_1 = true; $__currentLoopData = session('deportes'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $deporte): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
             <div class="imgcat">
-                
+                <a href="" class="imgcat-link">
+                    <img loading="lazy" class="imgcat__img" src="<?php echo e(Storage::url($deporte->imagen)); ?>" alt="<?php echo e($deporte->descripcion_img); ?>">
+                    <div class="overlay">
+                        <p class="text"><?php echo e($deporte->nombre); ?></p>
+                    </div>
+                </a>
             </div>
-            
+            <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_1): ?>
 
-            
+            <?php endif; ?>
         </div>
     </main>
 <?php $__env->stopSection(); ?>

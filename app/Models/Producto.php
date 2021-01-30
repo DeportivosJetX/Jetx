@@ -14,7 +14,7 @@ class Producto extends Model
     use HasFactory;
 
     public function imagenProductos(){
-        return $this->hasMany('App\Models\ImagenProducto','id_produto')
+        return $this->hasMany('App\Models\ImagenProducto','id_producto')
                     ->orderBy('prioridad','asc');
     }
 
@@ -35,7 +35,7 @@ class Producto extends Model
     }
 
     public function tallas(){
-        return $this->belongsToMany('App\Models\Talla','talla_productos','id_produto','id_talla')
+        return $this->belongsToMany('App\Models\Talla','talla_productos','id_producto','id_talla')
                     ->using('App\Models\TallaProducto')
                     ->as('tallaProducto')
                     ->withPivot('stock','estado')

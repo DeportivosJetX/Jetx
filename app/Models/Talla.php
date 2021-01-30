@@ -14,7 +14,7 @@ class Talla extends Model
     use HasFactory;
 
     public function productos(){
-        return $this->belongsToMany('App\Models\Producto','talla_productos','id_talla','id_produto')
+        return $this->belongsToMany('App\Models\Producto','talla_productos','id_talla','id_producto')
                     ->using('App\Models\TallaProducto')
                     ->as('tallaProducto')
                     ->withPivot('stock','estado')
