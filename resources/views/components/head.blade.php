@@ -7,7 +7,6 @@
     <meta name="theme-color" content="#000">
     <meta name="format-detection" content="telephone=no">
     <title>Deportivos JetX | @yield('title')</title>
-
     <!--Css-->
     <link rel="stylesheet" href="{{ asset('css/app.css') }}">
     <link rel="stylesheet" href="{{ asset('css/app1.css') }}">

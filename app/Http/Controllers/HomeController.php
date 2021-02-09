@@ -12,4 +12,6 @@ class HomeController extends Controller
         comprobarVariablesSesion();
         return view('home');
     }
+
+
 }

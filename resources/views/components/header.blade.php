@@ -31,11 +31,11 @@
             <li class="list-item "><a class="list-item__link home" href="{{ route('home') }}"><i class="fas fa-home"></i><span>HOME</span></a></li>
             @if(session()->has('deportes'))
             @forelse(session('deportes') as $deporte)
-            <li class="list-item "><a class="list-item__li.index') }}"><span>{{ $deporte->nombre }}</span></a>
+            <li class="list-item "><a class="list-item__link" href="{{ route('productos.indexDeporte',$deporte) }}"><span>{{ $deporte->nombre }}</span></a>
                 @if(session()->has('categorias'))
                 <ul class="menu-desktop__list categorias menu-desktop__secondlevel">
                 @forelse(session('categorias') as $categoria)
-                    <li class="list-item list-item-sub cateoria"><a class="list-item__link"><span>{{ $categoria->nombre }}</span></a></li>
+                    <li class="list-item list-item-sub cateoria"><a class="list-item__link" href="{{ route('productos.indexDeporteCategoria',[$deporte,$categoria]) }}"><span>{{ $categoria->nombre }}</span></a></li>
                 @empty
                     <li class="list-item list-item-sub cateoria"><a class="list-item__link" href="#"><span>No hay categorias</span></a></li>
                 @endforelse

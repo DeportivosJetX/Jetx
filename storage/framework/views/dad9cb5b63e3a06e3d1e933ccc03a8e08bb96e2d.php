@@ -27,7 +27,7 @@
                 <div class="menu-cat-contenedor">
                     <?php if(session()->has('deportes')): ?>
                     <?php $__empty_1 = true; $__currentLoopData = session('deportes'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $deporte): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                    <a href="" class="menu-link" style="background-image: url('/storage/<?php echo e($deporte->imagen); ?>');">
+                    <a href="<?php echo e(route('productos.indexDeporte',$deporte)); ?>" class="menu-link" style="background-image: url('/storage/<?php echo e($deporte->imagen); ?>');">
                         <div class="menu-link__title">
                             <h3><?php echo e(strtoupper($deporte->nombre)); ?></h3>
                         </div>
@@ -47,7 +47,7 @@
                 <div class="menu-cat-contenedor">
                     <?php if(session()->has('categorias')): ?>
                     <?php $__empty_1 = true; $__currentLoopData = session('categorias'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoria): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-                    <a href="" class="menu-link" style="background-image: url('/storage/<?php echo e($categoria->imagen); ?>');">
+                    <a href="<?php echo e(route('productos.indexCategoria',$categoria)); ?>" class="menu-link" style="background-image: url('/storage/<?php echo e($categoria->imagen); ?>');">
                         <div class="menu-link__title">
                             <h3><?php echo e(strtoupper($categoria->nombre)); ?></h3>
                         </div>

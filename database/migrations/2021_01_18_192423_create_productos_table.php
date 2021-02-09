@@ -19,6 +19,7 @@ class CreateProductosTable extends Migration
             $table->string('nombre',100);
             $table->string('slug',150)->unique();
             $table->decimal('costo', 10, 0);
+            $table->decimal('descuento', 3, 2)->default(0);
             $table->text('descripcion');
             $table->string('guia_tallas_img',100)->nullable();
             $table->enum('publico', ['hombres', 'mujeres', 'niños','unisex']);

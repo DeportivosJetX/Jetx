@@ -2,7 +2,9 @@
   grid-area: content;
   display: grid;
   grid-template-columns: 100%;
-  grid-template-rows: 130px auto;
+  grid-template-rows: 130px 40px auto;
+  place-items: center;
+  place-content: center;
   padding: 1rem 0;
 }
 
@@ -19,13 +21,14 @@
 }
 .content__title h2 {
   font-family: gothiceregular, "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
-  font-size: 1.6rem;
-  text-transform: lowercase;
+  font-size: 1.15rem;
+  text-transform: uppercase;
   padding: 1.3rem 0;
   letter-spacing: -2px;
 }
 
 .content__orderBy {
+  place-self: end;
   display: flex;
   position: relative;
   justify-content: center;
@@ -96,17 +99,22 @@
 
 .content__body {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% - 1.2rem)/2)));
-  gap: 1.5rem 1.2rem;
-  padding: 0.8rem 0.8rem;
+  grid-template-columns: repeat(auto-fit, minmax(130px, calc((100% - 3rem)/2)));
+  gap: 1.5rem 1.7rem;
+  padding: 0.9rem 0.9rem;
   place-content: start;
   place-items: stretch;
 }
 
+.card-producto {
+  border: 1px solid #dadada;
+  border-radius: 6px;
+  padding: 0.2rem;
+}
 .card-producto .card-producto__link {
   display: block;
   width: 100%;
-  height: calc((100vw / 2) - 1.2rem);
+  height: calc((100vw - 4.6rem)/2);
   position: relative;
 }
 .card-producto .card-producto__link .card-producto__img {
@@ -159,7 +167,8 @@
 }
 
 .card-producto__title {
-  font-size: 0.8rem;
+  padding-top: 0.3rem;
+  font-size: 0.75rem;
   text-align: center;
   text-transform: uppercase;
 }
@@ -173,17 +182,17 @@
 /* Small devices (landscape phones, 576px and up) */
 @media (min-width: 576px) and (max-width: 767.98px) {
   .content__body {
-    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% - 2.5rem)/2)));
+    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% - 5rem)/2)));
     gap: 1.5rem 2.5rem;
     padding: 0.8rem 1.5rem;
   }
 
   .card-producto .card-producto__link {
-    height: calc((100vw / 2) - 4rem);
+    height: calc((100vw - 7.5rem)/2);
   }
 
   .card-producto__title {
-    font-size: 0.85rem;
+    font-size: 0.8rem;
   }
 
   .card-producto__precio {
@@ -193,21 +202,21 @@
 /* Medium devices (tablets, 768px and up) */
 @media (min-width: 768px) and (max-width: 991.98px) {
   .content__title h2 {
-    font-size: 1.7rem;
+    font-size: 1.2rem;
   }
 
   .content__body {
-    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% - 2.4rem)/3)));
-    gap: 1.5rem 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% - 5rem)/3)));
+    gap: 1.5rem 2rem;
     padding: 0.8rem 1.5rem;
   }
 
   .card-producto .card-producto__link {
-    height: calc((100vw / 3) - 1.2rem);
+    height: calc((100vw - 7.5rem)/3);
   }
 
   .card-producto__title {
-    font-size: 0.9rem;
+    font-size: 0.85rem;
   }
 
   .card-producto__precio {
@@ -217,17 +226,17 @@
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   .content__title h2 {
-    font-size: 1.7rem;
+    font-size: 1.35rem;
   }
 
   .content__body {
-    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% - 3.6rem)/3)));
-    gap: 1.5rem 1.8rem;
-    padding: 0.8rem 1.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, calc((100% - 6.5rem)/3)));
+    gap: 1.5rem 2rem;
+    padding: 0.8rem 2rem;
   }
 
   .card-producto .card-producto__link {
-    height: calc((100vw / 3) - 1.2rem);
+    height: calc((100vw - 11rem)/3);
   }
   .card-producto .card-producto__link .complements span {
     width: 83px;
@@ -236,7 +245,7 @@
   }
 
   .card-producto__title {
-    font-size: 0.97rem;
+    font-size: 0.9rem;
   }
 
   .card-producto__precio {
@@ -246,17 +255,17 @@
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   .content__title h2 {
-    font-size: 1.7rem;
+    font-size: 1.35rem;
   }
 
   .content__body {
-    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% - 3.6rem)/4)));
-    gap: 1.5rem 1.2rem;
+    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% - 7rem)/4)));
+    gap: 1.5rem 1.6rem;
     padding: 0.8rem 1.5rem;
   }
 
   .card-producto .card-producto__link {
-    height: calc((100vw / 4) - 1.2rem);
+    height: calc((100vw - 10.8rem)/4);
   }
   .card-producto .card-producto__link .complements span {
     width: 83px;
@@ -265,7 +274,7 @@
   }
 
   .card-producto__title {
-    font-size: 1rem;
+    font-size: 0.95rem;
   }
 
   .card-producto__precio {

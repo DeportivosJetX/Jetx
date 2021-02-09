@@ -21,7 +21,7 @@ class CreateTallaProductosTable extends Migration
             $table->enum('estado', ['no disponible', 'disponible'])->default('no disponible');
             $table->softDeletes('deleted_at', 0);
             $table->timestamps();
-            $table->foreign('id_produto')->references('id')->on('productos');
+            $table->foreign('id_producto')->references('id')->on('productos');
             $table->foreign('id_talla')->references('id')->on('tallas');
         });
     }

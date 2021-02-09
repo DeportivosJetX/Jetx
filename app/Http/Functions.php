@@ -75,10 +75,23 @@ function getProducto($atributo,$orden){
 function getProductoC($atributo,$orden,$filtro,$valor){
     $productos = Producto::from('productos as productos')
         ->join('talla_productos as t',function($join){
-            $join->on('productos.referencia','=','t.referencia_producto');
+            $join->on('productos.id','=','t.id_producto');
         })->select(DB::raw('productos.*, sum(t.stock) as cantidad'))
         ->where('productos.'.$filtro, $valor)
-        ->groupBy('productos.referencia')
+        ->groupBy('productos.id')
+        ->orderBy('productos.'.$atributo, $orden)
+        ->paginate(15);
+    return $productos;
+}
+
+function getProductoDC($atributo,$orden,$filtro,$valor,$filtro2,$valor2){
+    $productos = Producto::from('productos as productos')
+        ->join('talla_productos as t',function($join){
+            $join->on('productos.id','=','t.id_producto');
+        })->select(DB::raw('productos.*, sum(t.stock) as cantidad'))
+        ->where('productos.'.$filtro, $valor)
+        ->where('productos.'.$filtro2, $valor2)
+        ->groupBy('productos.id')
         ->orderBy('productos.'.$atributo, $orden)
         ->paginate(15);
     return $productos;

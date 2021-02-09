@@ -5283,6 +5283,7 @@ body {
 }
 .busqueda .busqueda__contenido .busqueda__lista .busqueda__item .busqueda__item__img img {
   max-width: 100%;
+  height: 110px;
   -o-object-fit: cover;
      object-fit: cover;
   -o-object-position: center;

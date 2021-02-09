@@ -31,11 +31,11 @@
             <li class="list-item "><a class="list-item__link home" href="<?php echo e(route('home')); ?>"><i class="fas fa-home"></i><span>HOME</span></a></li>
             <?php if(session()->has('deportes')): ?>
             <?php $__empty_1 = true; $__currentLoopData = session('deportes'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $deporte): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
-            <li class="list-item "><a class="list-item__li.index') }}"><span><?php echo e($deporte->nombre); ?></span></a>
+            <li class="list-item "><a class="list-item__link" href="<?php echo e(route('productos.indexDeporte',$deporte)); ?>"><span><?php echo e($deporte->nombre); ?></span></a>
                 <?php if(session()->has('categorias')): ?>
                 <ul class="menu-desktop__list categorias menu-desktop__secondlevel">
                 <?php $__empty_2 = true; $__currentLoopData = session('categorias'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $categoria): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_2 = false; ?>
-                    <li class="list-item list-item-sub cateoria"><a class="list-item__link"><span><?php echo e($categoria->nombre); ?></span></a></li>
+                    <li class="list-item list-item-sub cateoria"><a class="list-item__link" href="<?php echo e(route('productos.indexDeporteCategoria',[$deporte,$categoria])); ?>"><span><?php echo e($categoria->nombre); ?></span></a></li>
                 <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); if ($__empty_2): ?>
                     <li class="list-item list-item-sub cateoria"><a class="list-item__link" href="#"><span>No hay categorias</span></a></li>
                 <?php endif; ?>

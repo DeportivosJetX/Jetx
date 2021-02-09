@@ -8,13 +8,13 @@
 
 @endsection
 @section('contenido')
-    <main class="content">
-        <div class="content__header" id="content__header">
+<main class="content-home">
+    <div class="content">
             <div class="content__title">
                 @isset($title)
-                <h2 class="">{{ $title }}</h2>
+                <h2 class="">{{ strtoupper($title) }}</h2>
                 @else
-                <h2 class="">Productos</h2>
+                <h2 class="">PRODUCTOS</h2>
                 @endisset
                 {{-- {{ sortByActive('sort_by=title-descending') }}
                 {{ dd(request()->sort_by) }} --}}

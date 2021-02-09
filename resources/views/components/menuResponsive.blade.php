@@ -27,7 +27,7 @@
                 <div class="menu-cat-contenedor">
                     @if(session()->has('deportes'))
                     @forelse(session('deportes') as $deporte)
-                    <a href="" class="menu-link" style="background-image: url('/storage/{{ $deporte->imagen }}');">
+                    <a href="{{ route('productos.indexDeporte',$deporte) }}" class="menu-link" style="background-image: url('/storage/{{ $deporte->imagen }}');">
                         <div class="menu-link__title">
                             <h3>{{ strtoupper($deporte->nombre) }}</h3>
                         </div>
@@ -47,7 +47,7 @@
                 <div class="menu-cat-contenedor">
                     @if(session()->has('categorias'))
                     @forelse(session('categorias') as $categoria)
-                    <a href="" class="menu-link" style="background-image: url('/storage/{{ $categoria->imagen }}');">
+                    <a href="{{ route('productos.indexCategoria',$categoria) }}" class="menu-link" style="background-image: url('/storage/{{ $categoria->imagen }}');">
                         <div class="menu-link__title">
                             <h3>{{ strtoupper($categoria->nombre) }}</h3>
                         </div>
