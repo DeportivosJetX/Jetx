@@ -8,11 +8,11 @@
 @section('contenido')
     <div class="content">
         <h1 class="title-inform">Rotación de productos</h1>
-        @php
+        {{-- @php
             $user = 1; //id del usuario logueado
-        @endphp
+        @endphp --}}
         {{-- <livewire:rotacion-productos usuario="2"/> --}}
-        <livewire:rotacion-productos :usuario="$user"/>
+        <livewire:rotacion-productos :usuario="Auth::user()->id"/>
     </div>
 @endsection
 @section('scriptFooter')

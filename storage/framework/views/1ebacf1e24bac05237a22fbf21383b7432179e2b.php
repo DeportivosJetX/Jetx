@@ -11,22 +11,20 @@
     <div class="content">
         <h1 class="title-inform">Informe de ingresos</h1>
         
-        <?php
-            $user = 1; //id del usuario logueado
-        ?>
+        
         
         <?php
 if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('grafica-ingresos', ['usuario' => $user,'filtro' => $filtro,'orderBy' => $orderBy,'filtros' => $filtro])->html();
-} elseif ($_instance->childHasBeenRendered('9QPPv1b')) {
-    $componentId = $_instance->getRenderedChildComponentId('9QPPv1b');
-    $componentTag = $_instance->getRenderedChildComponentTagName('9QPPv1b');
+    $html = \Livewire\Livewire::mount('grafica-ingresos', ['usuario' => Auth::user()->id,'filtro' => $filtro,'orderBy' => $orderBy,'filtros' => $filtro])->html();
+} elseif ($_instance->childHasBeenRendered('rn2ndzh')) {
+    $componentId = $_instance->getRenderedChildComponentId('rn2ndzh');
+    $componentTag = $_instance->getRenderedChildComponentTagName('rn2ndzh');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('9QPPv1b');
+    $_instance->preserveRenderedChild('rn2ndzh');
 } else {
-    $response = \Livewire\Livewire::mount('grafica-ingresos', ['usuario' => $user,'filtro' => $filtro,'orderBy' => $orderBy,'filtros' => $filtro]);
+    $response = \Livewire\Livewire::mount('grafica-ingresos', ['usuario' => Auth::user()->id,'filtro' => $filtro,'orderBy' => $orderBy,'filtros' => $filtro]);
     $html = $response->html();
-    $_instance->logRenderedChild('9QPPv1b', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('rn2ndzh', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

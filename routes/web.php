@@ -1,28 +1,46 @@
 <?php
 
-use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InformesController;
 use App\Http\Controllers\ProductoController;
-use App\Models\Categoria;
+use Illuminate\Support\Facades\Route;
 
+/*
+|--------------------------------------------------------------------------
+| Web Routes
+|--------------------------------------------------------------------------
+|
+| Here is where you can register web routes for your application. These
+| routes are loaded by the RouteServiceProvider within a group which
+| contains the "web" middleware group. Now create something great!
+|
+*/
 Route::get('/', [HomeController::class,'index'])->name('home');
 
-Route::get('/informes/ingresos', [InformesController::class,'indexIngresos'])->name('ingresos');
-Route::post('/informes/ingresos', [InformesController::class,'indexIngresosF'])->name('ingresosF');
+// Route::get('/', function () {
+//     return view('welcome');
+// })->name('home');
 
-Route::get('/informes/rotacion', [InformesController::class,'indexRotacion'])->name('rotacion');
+Route::get('/dashboard', function () {
+    return view('dashboard');
+})->middleware(['auth'])->name('dashboard');
 
-Route::get('/login', function () {
-    return view('login');
-})->name('login');
+/**
+ * Rutas autentificación
+ */
+require __DIR__.'/auth.php';
 
-Route::get('/register', function () {
-    return view('registro');
-})->name('register');
+/**
+ * Rutas de los informes
+ */
+Route::get('/informes/ingresos', [InformesController::class,'indexIngresos'])->middleware(['auth'])->name('ingresos');
+Route::post('/informes/ingresos', [InformesController::class,'indexIngresosF'])->middleware(['auth'])->name('ingresosF');
 
+Route::get('/informes/rotacion', [InformesController::class,'indexRotacion'])->middleware(['auth'])->name('rotacion');
 
-/*Rutas de productos*/
+/**
+ * Rutas de productos
+ */
 Route::get('/productos/all', [ProductoController::class,'index'])->name('productos.index');
 Route::get('/categorias/{categoria}', [ProductoController::class,'indexCategoria'])->name('productos.indexCategoria');
 Route::get('/deportes/{deporte}', [ProductoController::class,'indexDeporte'])->name('productos.indexDeporte');
@@ -32,4 +50,5 @@ Route::get('producto/{productos}', [ProductoController::class,'show'])->name('pr
 Route::get('/car', function () {
     return view('shoppingCar');
 })->name('car');
+
 

@@ -14,9 +14,24 @@
                 @if(session()->has('categorias'))
                     <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Categorias</span><i class="fas fa-angle-double-right"></i></a></li>
                 @endif
+                @auth
                 <li class="menu-item"><a href="{{ route('rotacion') }}" class="menu-main__link"><span>Informe de Rotación</span></a></li>
                 <li class="menu-item"><a href="{{ route('ingresos') }}" class="menu-main__link"><span>Informe de Ingresos</span></a></li>
+                <li class="menu-item">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-dropdown-link :href="route('logout')" class="menu-main__link"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                            {{ __('Logout') }}
+                        </x-dropdown-link>
+                    </form>
+                </li>
+                @endauth
+                @guest
                 <li class="menu-item iniciar-sesion"><a href="{{ route('login') }}"><span>Iniciar Sesión / Registro</span></a></li>
+                @endguest
             </ul>
         </div>
         <div class="menu-categoria" id="menu-categoria">

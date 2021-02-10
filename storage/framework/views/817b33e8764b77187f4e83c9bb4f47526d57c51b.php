@@ -6,22 +6,20 @@
 <?php $__env->startSection('contenido'); ?>
     <div class="content">
         <h1 class="title-inform">Rotación de productos</h1>
-        <?php
-            $user = 1; //id del usuario logueado
-        ?>
+        
         
         <?php
 if (! isset($_instance)) {
-    $html = \Livewire\Livewire::mount('rotacion-productos', ['usuario' => $user])->html();
-} elseif ($_instance->childHasBeenRendered('NanwpUO')) {
-    $componentId = $_instance->getRenderedChildComponentId('NanwpUO');
-    $componentTag = $_instance->getRenderedChildComponentTagName('NanwpUO');
+    $html = \Livewire\Livewire::mount('rotacion-productos', ['usuario' => Auth::user()->id])->html();
+} elseif ($_instance->childHasBeenRendered('XIZUD9a')) {
+    $componentId = $_instance->getRenderedChildComponentId('XIZUD9a');
+    $componentTag = $_instance->getRenderedChildComponentTagName('XIZUD9a');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('NanwpUO');
+    $_instance->preserveRenderedChild('XIZUD9a');
 } else {
-    $response = \Livewire\Livewire::mount('rotacion-productos', ['usuario' => $user]);
+    $response = \Livewire\Livewire::mount('rotacion-productos', ['usuario' => Auth::user()->id]);
     $html = $response->html();
-    $_instance->logRenderedChild('NanwpUO', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('XIZUD9a', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

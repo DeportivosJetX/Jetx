@@ -11,7 +11,7 @@
         <div class="content">
             <?php $__empty_1 = true; $__currentLoopData = session('deportes'); $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $deporte): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); $__empty_1 = false; ?>
             <div class="imgcat">
-                <a href="" class="imgcat-link">
+                <a href="<?php echo e(route('productos.indexDeporte',$deporte)); ?>" class="imgcat-link">
                     <img loading="lazy" class="imgcat__img" src="<?php echo e(Storage::url($deporte->imagen)); ?>" alt="<?php echo e($deporte->descripcion_img); ?>">
                     <div class="overlay">
                         <p class="text"><?php echo e($deporte->nombre); ?></p>

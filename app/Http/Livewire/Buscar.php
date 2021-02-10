@@ -11,7 +11,7 @@ class Buscar extends Component
 
     public function render()
     {
-        if($search = ""){
+        if($this->search == ""){
             $pSearch = [];
         }
         else{

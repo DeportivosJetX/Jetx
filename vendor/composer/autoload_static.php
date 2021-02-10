@@ -131,6 +131,7 @@ class ComposerStaticInit77843ecbaaad9c090cfb778044fd98b2
             'Laravel\\Ui\\' => 11,
             'Laravel\\Tinker\\' => 15,
             'Laravel\\Sail\\' => 13,
+            'Laravel\\Breeze\\' => 15,
             'LaravelFrontendPresets\\TailwindCssPreset\\' => 41,
         ),
         'I' => 
@@ -408,6 +409,10 @@ class ComposerStaticInit77843ecbaaad9c090cfb778044fd98b2
         array (
             0 => __DIR__ . '/..' . '/laravel/sail/src',
         ),
+        'Laravel\\Breeze\\' => 
+        array (
+            0 => __DIR__ . '/..' . '/laravel/breeze/src',
+        ),
         'LaravelFrontendPresets\\TailwindCssPreset\\' => 
         array (
             0 => __DIR__ . '/..' . '/laravel-frontend-presets/tailwindcss/src',
@@ -534,7 +539,12 @@ class ComposerStaticInit77843ecbaaad9c090cfb778044fd98b2
         'App\\Exceptions\\Handler' => __DIR__ . '/../..' . '/app/Exceptions/Handler.php',
         'App\\Http\\Controllers\\Controller' => __DIR__ . '/../..' . '/app/Http/Controllers/Controller.php',
         'App\\Http\\Controllers\\HomeController' => __DIR__ . '/../..' . '/app/Http/Controllers/HomeController.php',
+        'App\\Http\\Controllers\\InformesController' => __DIR__ . '/../..' . '/app/Http/Controllers/InformesController.php',
+        'App\\Http\\Controllers\\ProductoController' => __DIR__ . '/../..' . '/app/Http/Controllers/ProductoController.php',
         'App\\Http\\Kernel' => __DIR__ . '/../..' . '/app/Http/Kernel.php',
+        'App\\Http\\Livewire\\Buscar' => __DIR__ . '/../..' . '/app/Http/Livewire/Buscar.php',
+        'App\\Http\\Livewire\\GraficaIngresos' => __DIR__ . '/../..' . '/app/Http/Livewire/GraficaIngresos.php',
+        'App\\Http\\Livewire\\RotacionProductos' => __DIR__ . '/../..' . '/app/Http/Livewire/RotacionProductos.php',
         'App\\Http\\Middleware\\Authenticate' => __DIR__ . '/../..' . '/app/Http/Middleware/Authenticate.php',
         'App\\Http\\Middleware\\EncryptCookies' => __DIR__ . '/../..' . '/app/Http/Middleware/EncryptCookies.php',
         'App\\Http\\Middleware\\PreventRequestsDuringMaintenance' => __DIR__ . '/../..' . '/app/Http/Middleware/PreventRequestsDuringMaintenance.php',
@@ -2552,6 +2562,8 @@ class ComposerStaticInit77843ecbaaad9c090cfb778044fd98b2
         'JsonException' => __DIR__ . '/..' . '/symfony/polyfill-php73/Resources/stubs/JsonException.php',
         'LaravelFrontendPresets\\TailwindCssPreset\\TailwindCssPreset' => __DIR__ . '/..' . '/laravel-frontend-presets/tailwindcss/src/TailwindCssPreset.php',
         'LaravelFrontendPresets\\TailwindCssPreset\\TailwindCssPresetServiceProvider' => __DIR__ . '/..' . '/laravel-frontend-presets/tailwindcss/src/TailwindCssPresetServiceProvider.php',
+        'Laravel\\Breeze\\BreezeServiceProvider' => __DIR__ . '/..' . '/laravel/breeze/src/BreezeServiceProvider.php',
+        'Laravel\\Breeze\\Console\\InstallCommand' => __DIR__ . '/..' . '/laravel/breeze/src/Console/InstallCommand.php',
         'Laravel\\Sail\\SailServiceProvider' => __DIR__ . '/..' . '/laravel/sail/src/SailServiceProvider.php',
         'Laravel\\Tinker\\ClassAliasAutoloader' => __DIR__ . '/..' . '/laravel/tinker/src/ClassAliasAutoloader.php',
         'Laravel\\Tinker\\Console\\TinkerCommand' => __DIR__ . '/..' . '/laravel/tinker/src/Console/TinkerCommand.php',

@@ -13,7 +13,7 @@
         <div class="content">
             @forelse(session('deportes') as $deporte)
             <div class="imgcat">
-                <a href="" class="imgcat-link">
+                <a href="{{ route('productos.indexDeporte',$deporte) }}" class="imgcat-link">
                     <img loading="lazy" class="imgcat__img" src="{{ Storage::url($deporte->imagen) }}" alt="{{ $deporte->descripcion_img }}">
                     <div class="overlay">
                         <p class="text">{{ $deporte->nombre }}</p>

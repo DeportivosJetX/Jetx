@@ -16,11 +16,11 @@
             filtro: {{ $filtro }}<br>
             orderBy: {{ $orderBy }}<br>
         </p> --}}
-        @php
+        {{-- @php
             $user = 1; //id del usuario logueado
-        @endphp
+        @endphp --}}
         {{-- <livewire:rotacion-productos usuario="2"/> --}}
-        <livewire:grafica-ingresos :usuario="$user" :filtro="$filtro" :orderBy="$orderBy" :filtros="$filtro"/>
+        <livewire:grafica-ingresos :usuario="Auth::user()->id" :filtro="$filtro" :orderBy="$orderBy" :filtros="$filtro"/>
     </div>
 @endsection
 @section('scriptFooter')

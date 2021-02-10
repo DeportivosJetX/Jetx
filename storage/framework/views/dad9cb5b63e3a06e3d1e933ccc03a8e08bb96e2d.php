@@ -14,9 +14,35 @@
                 <?php if(session()->has('categorias')): ?>
                     <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Categorias</span><i class="fas fa-angle-double-right"></i></a></li>
                 <?php endif; ?>
+                <?php if(auth()->guard()->check()): ?>
                 <li class="menu-item"><a href="<?php echo e(route('rotacion')); ?>" class="menu-main__link"><span>Informe de Rotación</span></a></li>
                 <li class="menu-item"><a href="<?php echo e(route('ingresos')); ?>" class="menu-main__link"><span>Informe de Ingresos</span></a></li>
+                <li class="menu-item">
+                    <form method="POST" action="<?php echo e(route('logout')); ?>">
+                        <?php echo csrf_field(); ?>
+
+                         <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
+<?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.dropdown-link','data' => ['href' => route('logout'),'class' => 'menu-main__link','onclick' => 'event.preventDefault();
+                                            this.closest(\'form\').submit();']]); ?>
+<?php $component->withName('dropdown-link'); ?>
+<?php if ($component->shouldRender()): ?>
+<?php $__env->startComponent($component->resolveView(), $component->data()); ?>
+<?php $component->withAttributes(['href' => \Illuminate\View\Compilers\BladeCompiler::sanitizeComponentAttribute(route('logout')),'class' => 'menu-main__link','onclick' => 'event.preventDefault();
+                                            this.closest(\'form\').submit();']); ?>
+                            <?php echo e(__('Logout')); ?>
+
+                         <?php if (isset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4)): ?>
+<?php $component = $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4; ?>
+<?php unset($__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4); ?>
+<?php endif; ?>
+<?php echo $__env->renderComponent(); ?>
+<?php endif; ?> 
+                    </form>
+                </li>
+                <?php endif; ?>
+                <?php if(auth()->guard()->guest()): ?>
                 <li class="menu-item iniciar-sesion"><a href="<?php echo e(route('login')); ?>"><span>Iniciar Sesión / Registro</span></a></li>
+                <?php endif; ?>
             </ul>
         </div>
         <div class="menu-categoria" id="menu-categoria">
