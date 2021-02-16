@@ -3,6 +3,7 @@
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\InformesController;
 use App\Http\Controllers\ProductoController;
+use App\Http\Controllers\CarritoController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -47,8 +48,12 @@ Route::get('/deportes/{deporte}', [ProductoController::class,'indexDeporte'])->n
 Route::get('/productos/{deporte}/{categoria}', [ProductoController::class,'indexDeporteCategoria'])->name('productos.indexDeporteCategoria');
 Route::get('producto/{productos}', [ProductoController::class,'show'])->name('productos.show');
 
-Route::get('/car', function () {
-    return view('shoppingCar');
-})->name('car');
 
-
+/**
+ * Ruta del carrito de compras
+ */
+Route::get('/carrito',[CarritoController::class,'index'])->name('carrito.index');
+Route::post('/carrito/{producto}',[CarritoController::class,'store'])->name('carrito.store');
+Route::get('/confirmar-pedido',[CarritoController::class,'confirmo'])->middleware(['auth'])->name('carrito.confirmo');
+Route::delete('carrito/{indice}',[CarritoController::class,'delete'])->name('carrito.delete');
+Route::post('/confirmar-pedido',[CarritoController::class,'storePedido'])->name('pedido.store');

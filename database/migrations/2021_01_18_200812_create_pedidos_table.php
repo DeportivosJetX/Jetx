@@ -22,7 +22,7 @@ class CreatePedidosTable extends Migration
             $table->string('especificacion',50);
             $table->decimal('costo_envio', 10, 0);
             $table->enum('estado', ['no enviado', 'enviado', 'recibido']);
-            $table->char('nro_seguimiento',15);
+            $table->char('nro_seguimiento',15)->nullable();
             $table->UnsignedBigInteger('id_usuario');
             $table->UnsignedSmallInteger('id_ciudad');
             $table->timestamps();

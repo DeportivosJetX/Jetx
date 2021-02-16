@@ -18,7 +18,12 @@
             <div class="icono__car">
                 <a id="link-carrito" class="fas-link" href="javascript:void(0)" title="Ver su carrito de compras">
                     <i class="fas fa-shopping-cart"></i>
+                    @if (session()->has('carrito'))
+                    <span class="">{{count(session('carrito'))}}</span>
+                    @else
                     <span class="">0</span>
+                    @endif
+                    
                 </a>
             </div>
             @auth

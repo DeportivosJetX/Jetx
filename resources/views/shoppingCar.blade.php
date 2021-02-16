@@ -1,28 +1,51 @@
 {{-- <link rel="stylesheet" href="{{ asset('css/app.css') }}"> --}}
-<div class="row cart-content">
+@extends('layouts/layout')
+@section('title','Carrito')
+
+@section('contenido')
+<div class="row cart-content content">
+    <h1 class="mb:4">CARRITO DE COMPRAS</h1>
+    @isset($error)
+        <span>{{$error}}</span>
+    @endisset
     <div class="cart-content__productList">
         <div class="cart-info">
             <h4 class="font-title font-title--sub-title-3 ">
-                Productos en el carrito:<span>(1)</span>
+                @if (session()->has('carrito'))
+                    Productos en el carrito:<span>({{count(session('carrito'))}})</span>
+                    @else
+                    Productos en el carrito:<span>(0)</span>
+                    @endif
             </h4>
             <div class="yCmsComponent yComponentWrapper">
                 <div class="cart-item-list">
                     <ul class="item__list item__list__cart">
-                        <li class="item__list--item ktronix-site ">
+                        @php 
+                        $subtotal = 0;
+                        @endphp
+                        @if(session()->has('carrito'))
+                        @forelse (session('carrito') as $car)
+                        <li class="item__list--item ">
                             <div class="item__main">
                                 <div class="item-column item__image">
-                                    <a title="" href="">
-                                        <img loading="lazy" alt="" title="" src="" style="opacity: 1;">
+                                    <a title="" href="{{ route('productos.show',$car['producto']) }}">
+                                        <img loading="lazy" alt="" title="" width="100" src="{{Storage::url($car['producto']->imagenProductos[0]->nombre_imagen)}}" style="opacity: 1;">
                                     </a>
                                 </div>
                                 <div class="item-column item__info">
-                                    <a href="">
-                                        <span class="item__name">nombre producto</span>
+                                    <a href="{{ route('productos.show',$car['producto']) }}">
+                                        <span class="item__name">{{$car['producto']->nombre}}</span>
                                     </a>
+                                    <span class="talla-producto">Talla: {{ $car['tallaN'] }}</span>
                                     <div class="item__interactions hidden-xs hidden-sm">
-                                        <a href="#" class="item__interactions__button">
-                                            <i class="icon-bin"></i> Eliminar
-                                        </a>
+                                        <form action="{{ route('carrito.delete',($loop->index)) }}" method="POST">
+                                            @csrf
+                                            @method('DELETE')
+                                            <button type="submit" class="item__interactions__button">
+                                                <i class="icon-bin"></i> Eliminar
+                                            </button>
+                                        </form>
+                                        
                                     </div>
                                 </div>
                             </div>
@@ -35,32 +58,41 @@
                             <div class="item-column item__price">
                                 <div class="align-items">
                                     <span class="item__price__main">
-                                        $513.900
+                                        {{ number_format($car['producto']->costo*$car['cantidad']) }}
+                                        @php
+                                            $subtotal += $car['producto']->costo*$car['cantidad']
+                                        @endphp
                                     </span>
                                 </div>
                             </div>
                             <div class="item-column item__quantity">
                                 <div class="form-group red-arrow item__quantity__form">
                                     <label for="quantity0">
-                                        Cantidad:
+                                        Cantidad: 
                                     </label>
                                     <span class="plain-select">
-                                        <select id="quantity_0" name="quantity" class="form-control js-update-entry-quantity-input item__quantity__select" type="text" size="1">
-                                            <option value="0">0 - eliminar</option>
-                                            <option value="1" label="1" selected="">1</option>
-                                            <option value="2" label="2">2</option>
-                                            <option value="3" label="3">3</option>
-                                            <option value="4" label="4">4</option>
-                                        </select>
+                                        {{ $car['cantidad'] }}
                                     </span>
                                 </div>
                                 <div class="item__interactions hidden-md hidden-lg">
-                                    <a href="#" class="item__interactions__button">
-                                        <i class="icon-bin"></i> Eliminar
-                                    </a>
+                                    <form action="{{ route('carrito.delete',($loop->index)) }}" method="POST">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="item__interactions__button">
+                                            <i class="icon-bin"></i> Eliminar
+                                        </button>
+                                    </form>
                                 </div>
                             </div>
                         </li>
+                        <br>
+                        <hr>
+                        @empty
+                            <li class="item__list--item ">Carrito vacío</li>
+                        @endforelse
+                        @else
+                        <li class="item__list--item ">Carrito vacío</li>
+                        @endif
                     </ul>
                 </div>
                 <div class="row">
@@ -70,17 +102,17 @@
                                 Total
                             </div>
                             <div class="col-xs-6 cart-totals-right text-right grand-total mycart mycart__title mycart--bold">
-                                $513.900
+                                ${{number_format($subtotal)}}
                             </div>
                         </div>
                     </div>
                     <div class="col-xs-12 pull-right cart-actions--print">
                         <div class="cart-bottom-actions">
                             <div class="cart-bottom-actions__continue">
-                                <button class="ktronix-cart-action btn button-variant btn-default btn-default--white btn--continue-shopping js-continue-shopping-button " >Continuar comprando</button>
+                                <a class="ktronix-cart-action btn button-variant btn-default btn-default--white btn--continue-shopping js-continue-shopping-button " href="{{ route('productos.index')}}" >Continuar comprando</a>
                             </div>
                             <div class="cart-bottom-actions__checkout">
-                                <button class="btn button-variant btn-default btn-default--green btn--continue-checkout js-continue-checkout-button" >Ir a pagar</button>
+                                <a class="btn button-variant btn-default btn-default--green btn--continue-checkout " href="{{ route('carrito.confirmo')}}" >Ir a pagar</a>
                             </div>
                         </div>
                     </div>
@@ -89,3 +121,5 @@
         </div>
     </div>
 </div>
+@endsection
+

@@ -7,58 +7,38 @@
         <div class="menu-content">
             <div class="menu-content__scroll">
                 <ul class="carrito-contenido__lista">
+                    @php 
+                    $subtotal = 0;
+                    @endphp
+                    @if(session()->has('carrito'))
+                    @forelse (session('carrito') as $car)
+                    <li class="carrito-contenido__item">
+                        <div class="carrito-contenido__item__img">
+                            <img loading="lazy" src="{{ Storage::url($car['producto']->imagenProductos[0]->nombre_imagen) }}" alt="{{$car['producto']->nombre}}">
+                        </div>
+                        <div class="carrito-contenido__item__detalle">
+                            <a href="" class="nombre-producto">{{$car['producto']->nombre}}</a>
+                            <span class="talla-producto">Talla: {{ $car['tallaN'] }}</span>
+                            <span class="cantidad-producto">Cantidad: {{ $car['cantidad'] }}</span>
+                            <span class="precio-producto">{{$car['producto']->costo}}</span>
+                        </div>
+                    </li>
+                    @php 
+                    $subtotal += $car['producto']->costo*$car['cantidad'];
+                    @endphp
+                    @empty
+                    <li class="carrito-contenido__item carrito-contenido__vacio"><i class="addCarrito"></i> <span>No tienes productos en el carrito.</span></li> 
+                    @endforelse   
+                    @else
                     <li class="carrito-contenido__item carrito-contenido__vacio"><i class="addCarrito"></i> <span>No tienes productos en el carrito.</span></li>
-                    <li class="carrito-contenido__item">
-                        <div class="carrito-contenido__item__img">
-                            <img loading="lazy" src="{{ Storage::url('images/productos/1.JPG') }}" alt="accesorios">
-                        </div>
-                        <div class="carrito-contenido__item__detalle">
-                            <a href="" class="nombre-producto">Nombre Producto</a>
-                            <span class="talla-producto">Talla: S</span>
-                            <span class="cantidad-producto">Cantidad: 2</span>
-                            <span class="precio-producto">$180.000</span>
-                        </div>
-                    </li>
-                    <li class="carrito-contenido__item">
-                        <div class="carrito-contenido__item__img">
-                            <img loading="lazy" src="{{ Storage::url('images/productos/2.JPG') }}" alt="accesorios">
-                        </div>
-                        <div class="carrito-contenido__item__detalle">
-                            <a href="" class="nombre-producto">Nombre Producto</a>
-                            <span class="talla-producto">Talla: S</span>
-                            <span class="cantidad-producto">Cantidad: 2</span>
-                            <span class="precio-producto">$180.000</span>
-                        </div>
-                    </li>
-                    <li class="carrito-contenido__item">
-                        <div class="carrito-contenido__item__img">
-                            <img loading="lazy" src="{{ Storage::url('images/productos/3.JPG') }}" alt="accesorios">
-                        </div>
-                        <div class="carrito-contenido__item__detalle">
-                            <a href="" class="nombre-producto">Nombre Producto</a>
-                            <span class="talla-producto">Talla: S</span>
-                            <span class="cantidad-producto">Cantidad: 2</span>
-                            <span class="precio-producto">$180.000</span>
-                        </div>
-                    </li>
-                    <li class="carrito-contenido__item">
-                        <div class="carrito-contenido__item__img">
-                            <img loading="lazy" src="{{ Storage::url('images/productos/4.JPG') }}" alt="accesorios">
-                        </div>
-                        <div class="carrito-contenido__item__detalle">
-                            <a href="" class="nombre-producto">Nombre Producto</a>
-                            <span class="talla-producto">Talla: S</span>
-                            <span class="cantidad-producto">Cantidad: 2</span>
-                            <span class="precio-producto">$180.000</span>
-                        </div>
-                    </li>
+                    @endif
                 </ul>
             </div>
             <div class="menu-content__footer">
-                <p class="menu-content__footer__subtotal"><span class="subtotal">Subtotal:</span><span class="subtotal-valor">$0</span></p>
+                <p class="menu-content__footer__subtotal"><span class="subtotal">Subtotal:</span><span class="subtotal-valor">${{ (isset($subtotal)) ? number_format($subtotal):"0" }}</span></p>
                 <div class="menu-content__footer__botones">
-                    <a href="">Ver mi carrito</a>
-                    <a href="">Ir a pagar</a>
+                    <a href="{{ route('carrito.index') }}">Ver mi carrito</a>
+                    <a href="{{ route('carrito.confirmo') }}">Ir a pagar</a>
                 </div>
             </div>
         </div>

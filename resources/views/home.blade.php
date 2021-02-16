@@ -11,6 +11,9 @@
 @section('contenido')
     <main class="content-home">
         <div class="content">
+            @isset($message)
+                <span class="mt:4 mb:2">{{$message}}</span>
+            @endisset
             @forelse(session('deportes') as $deporte)
             <div class="imgcat">
                 <a href="{{ route('productos.indexDeporte',$deporte) }}" class="imgcat-link">

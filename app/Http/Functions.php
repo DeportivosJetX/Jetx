@@ -61,12 +61,29 @@ function comprobarVariablesSesion(){
     }
 }
 
+
 function getProducto($atributo,$orden){
     $productos = Producto::from('productos as productos')
         ->join('talla_productos as t',function($join){
             $join->on('productos.id','=','t.id_producto');
         })->select(DB::raw('productos.*, sum(t.stock) as cantidad'))
         ->groupBy('productos.id')
+        ->groupBy('productos.referencia')
+        ->groupBy('productos.nombre')
+        ->groupBy('productos.slug')
+        ->groupBy('productos.costo')
+        ->groupBy('productos.descuento')
+        ->groupBy('productos.descripcion')
+        ->groupBy('productos.guia_tallas_img')
+        ->groupBy('productos.publico')
+        ->groupBy('productos.envio')
+        ->groupBy('productos.id_categoria')
+        ->groupBy('productos.id_deporte')
+        ->groupBy('productos.id_usuario')
+        ->groupBy('productos.id_ciudad')
+        ->groupBy('productos.deleted_at')
+        ->groupBy('productos.created_at')
+        ->groupBy('productos.updated_at')
         ->orderBy('productos.'.$atributo, $orden)
         ->paginate(15);
     return $productos;
@@ -79,6 +96,22 @@ function getProductoC($atributo,$orden,$filtro,$valor){
         })->select(DB::raw('productos.*, sum(t.stock) as cantidad'))
         ->where('productos.'.$filtro, $valor)
         ->groupBy('productos.id')
+        ->groupBy('productos.referencia')
+        ->groupBy('productos.nombre')
+        ->groupBy('productos.slug')
+        ->groupBy('productos.costo')
+        ->groupBy('productos.descuento')
+        ->groupBy('productos.descripcion')
+        ->groupBy('productos.guia_tallas_img')
+        ->groupBy('productos.publico')
+        ->groupBy('productos.envio')
+        ->groupBy('productos.id_categoria')
+        ->groupBy('productos.id_deporte')
+        ->groupBy('productos.id_usuario')
+        ->groupBy('productos.id_ciudad')
+        ->groupBy('productos.deleted_at')
+        ->groupBy('productos.created_at')
+        ->groupBy('productos.updated_at')
         ->orderBy('productos.'.$atributo, $orden)
         ->paginate(15);
     return $productos;
@@ -92,6 +125,22 @@ function getProductoDC($atributo,$orden,$filtro,$valor,$filtro2,$valor2){
         ->where('productos.'.$filtro, $valor)
         ->where('productos.'.$filtro2, $valor2)
         ->groupBy('productos.id')
+        ->groupBy('productos.referencia')
+        ->groupBy('productos.nombre')
+        ->groupBy('productos.slug')
+        ->groupBy('productos.costo')
+        ->groupBy('productos.descuento')
+        ->groupBy('productos.descripcion')
+        ->groupBy('productos.guia_tallas_img')
+        ->groupBy('productos.publico')
+        ->groupBy('productos.envio')
+        ->groupBy('productos.id_categoria')
+        ->groupBy('productos.id_deporte')
+        ->groupBy('productos.id_usuario')
+        ->groupBy('productos.id_ciudad')
+        ->groupBy('productos.deleted_at')
+        ->groupBy('productos.created_at')
+        ->groupBy('productos.updated_at')
         ->orderBy('productos.'.$atributo, $orden)
         ->paginate(15);
     return $productos;

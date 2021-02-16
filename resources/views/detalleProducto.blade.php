@@ -77,7 +77,7 @@
             </div>
             <div class="tallas-producto">
                 {{-- <form method="post" action="{{ route('carrito.store') }}" accept-charset="utf-8" enctype="multipart/form-data"> --}}
-                <form method="post" action="" accept-charset="utf-8" enctype="multipart/form-data">
+                <form method="post" action="{{ route('carrito.store',$productos) }}" accept-charset="utf-8" enctype="multipart/form-data">
                     @csrf
                     <select name="id_talla" id="product-select" class="hidden">
                         @foreach($productos->tallas as $talla)
@@ -104,17 +104,30 @@
                         </ul>
                         @endif
                     </div>
-                    <br/>
+                    <!-- <div class="Cantidad">
+                        <form action="/action_page.php">
+                         <label for="cantidad">Cantidad:</label><br>
+                         <input type="number" max="{{ $productos->cantidad }}" min="1" id="cantidad" name="cantidad" value="1"><br><br>
+                        <input type="submit" value="Agregar al carrito" class="guiaTallas">
+                        <input type="hidden" value="{{ $productos->nombre }}" id="nombre"class="guiaTallas">
+                        <input type="hidden" value="{{ $productos->talla }}" id="talla" class="guiaTallas">
+                        <input type="hidden" value="{{ $productos->precio }}" id="precio" class="guiaTallas">
+                        <input type="hidden" value="{{ $productos->id }}" id="id" class="guiaTallas">
+                        </form>
+                    </div>
+                    <br/> -->
+
                     <div class="">
                         <p class="no-stock {{ tActive($productos->tallas[0]->tallaProducto->stock) }}" id="no-stock"><i class="fas fa-exclamation-circle"></i>Prenda No Disponible</p>
-                        {{-- @if($productos->cantidad>=0)
+                        @if($productos->cantidad>=0)
                         <div class="cantidad-agregar {{ ocultarCantidad($productos->tallas[0]->tallaProducto->stock) }}">
                             <div class="cantidad-producto" id="cantidad-producto">
                                 <div class="arriba-abajo menos">
                                     <a class="cantidad-abajo cantidad-botones fas fa-angle-down" id="cantida-down">
                                     </a>
                                 </div>
-                                <input type="number" step="1" min="1" max="{{ $productos->tallas[0]->tallaProducto->stock }}" name="cantidad" id="cantidad" value="1" title="cantidad" class="input-cantidad">
+                                <input type="number" max="{{ $productos->tallas[0]->tallaProducto->stock }}" min="1" id="cantidad" name="cantidad" value="1" class="input-cantidad">
+                               
                                 <div class="arriba-abajo mas">
                                     <a class="cantidad-arriba cantidad-botones fas fa-angle-up" id="cantida-up">
                                     </a>
@@ -129,7 +142,7 @@
                             <button class="open-Contacto-talla" type="button">
                                 <span class="Modal-Contacto-talla__title">SOLICITAR STOCK</span>
                             </button>
-                        </div> --}}
+                        </div>
                     </div>
                 </form>
             </div>
