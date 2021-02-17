@@ -1,10 +1,6 @@
-
-
 <?php $__env->startSection('title', 'Iniciar Sesión'); ?>
 <?php $__env->startSection('css'); ?>
     <link rel="stylesheet" href="<?php echo e(asset('css/login.css')); ?>">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('scriptHeader'); ?>
 
@@ -28,13 +24,13 @@
             </div>
             <div class="bottom-text">
                 <div>¿Aún no estás registrado?</div>
-                <a class="link" href="">Entra aquí</a>
+                <a class="link" href="<?php echo e(route('register')); ?>">Entra aquí</a>
             </div>
         </form>
     </div>
 <?php $__env->stopSection(); ?>
 <?php $__env->startSection('scriptFooter'); ?>
-    <script src="<?php echo e(asset('js/algo.js')); ?>"></script>
+
 <?php $__env->stopSection(); ?>
 
 <?php echo $__env->make('layouts/layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\www\jetx\resources\views/login.blade.php ENDPATH**/ ?>

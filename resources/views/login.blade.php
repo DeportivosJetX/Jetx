@@ -3,8 +3,6 @@
 @section('title', 'Iniciar Sesión')
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/login.css') }}">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 @endsection
 @section('scriptHeader')
 
@@ -28,11 +26,11 @@
             </div>
             <div class="bottom-text">
                 <div>¿Aún no estás registrado?</div>
-                <a class="link" href="">Entra aquí</a>
+                <a class="link" href="{{ route('register') }}">Entra aquí</a>
             </div>
         </form>
     </div>
 @endsection
 @section('scriptFooter')
-    <script src="{{ asset('js/algo.js') }}"></script>
+
 @endsection

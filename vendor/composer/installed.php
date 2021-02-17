@@ -1,12 +1,12 @@
 <?php return array (
   'root' => 
   array (
-    'pretty_version' => '1.0.0+no-version-set',
-    'version' => '1.0.0.0',
+    'pretty_version' => 'dev-main',
+    'version' => 'dev-main',
     'aliases' => 
     array (
     ),
-    'reference' => NULL,
+    'reference' => 'be4a1cc412665bcf2732ba1bc9f80c0aa7f3080b',
     'name' => 'laravel/laravel',
   ),
   'versions' => 
@@ -429,6 +429,24 @@
         0 => '*',
       ),
     ),
+    'laravel-frontend-presets/tailwindcss' => 
+    array (
+      'pretty_version' => '4.3.1',
+      'version' => '4.3.1.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '4f821e72ff7a46057d815d450ce8f7c64f7abe7a',
+    ),
+    'laravel/breeze' => 
+    array (
+      'pretty_version' => 'v1.0.2',
+      'version' => '1.0.2.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => '24cf5acc5a77020465f304ce2d7f6b702f845d57',
+    ),
     'laravel/framework' => 
     array (
       'pretty_version' => 'v8.22.1',
@@ -440,12 +458,12 @@
     ),
     'laravel/laravel' => 
     array (
-      'pretty_version' => '1.0.0+no-version-set',
-      'version' => '1.0.0.0',
+      'pretty_version' => 'dev-main',
+      'version' => 'dev-main',
       'aliases' => 
       array (
       ),
-      'reference' => NULL,
+      'reference' => 'be4a1cc412665bcf2732ba1bc9f80c0aa7f3080b',
     ),
     'laravel/sail' => 
     array (
@@ -464,6 +482,15 @@
       array (
       ),
       'reference' => '45884b526e10a88a1b179fa1a1a24d5468c668c2',
+    ),
+    'laravel/ui' => 
+    array (
+      'pretty_version' => 'v3.2.0',
+      'version' => '3.2.0.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'a1f82c6283c8373ea1958b8a27c3d5c98cade351',
     ),
     'league/commonmark' => 
     array (
@@ -491,6 +518,15 @@
       array (
       ),
       'reference' => '353f66d7555d8a90781f6f5e7091932f9a4250aa',
+    ),
+    'livewire/livewire' => 
+    array (
+      'pretty_version' => 'v2.3.8',
+      'version' => '2.3.8.0',
+      'aliases' => 
+      array (
+      ),
+      'reference' => 'c661e295428b2baaff04320d0a9424db5ca72be5',
     ),
     'mockery/mockery' => 
     array (

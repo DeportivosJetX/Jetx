@@ -3,38 +3,24 @@
 <?php echo $__env->make('components/head', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
 <body>
     <div class="contenedor">
-        
-        
-        <div class="contenedor-inicio-sesion">
-            <div class="contenedor-inicio-sesion__scroll">
-                <div class="contenedor-formulario">
-                    <form action="" class="form-inicio-sesion" method="post">
-                        <div class="cerrar-inicio-sesion">
-                            <i class="fa fa-times"></i>
-                        </div>
-                        <div class="content-inicio-sesion">
-                            <div class="form-iniciar-sesion__title">
-                                <h2>Iniciar sesión</h2>
-                            </div>
-                            <div class="form-datos-iniciar-sesion">
-                                <input type="text" class="form-input input-login" placeholder="Email/Usuario" id="usuario">
-                                <i class="fa fa-user"></i>
-                            </div>
-                            <div class="form-datos-iniciar-sesion">
-                                <input type="password" class="form-input input-login" placeholder="Contraseña" id="contraseña">
-                                <i class="fa fa-lock"></i>
-                            </div>
-                            <div class="form-iniciar-sesion__boton">
-                                <input type="submit" class="btn-enviar" value="Entrar">
-                            </div>
-                            <div class="form-iniciar-sesion__bottom-text">
-                                <p>¿Aún no estás registrado?</p>
-                                <a class="link" href="#">Entra aquí</a>
-                            </div>
-                        </div>
-                    </form>
-                </div>
-            </div>
+        <?php echo $__env->make('components/menuResponsive', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <?php echo $__env->make('components/carritoDesplegable', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?>
+        <div id="busqueda" class="busqueda">
+            <?php
+if (! isset($_instance)) {
+    $html = \Livewire\Livewire::mount('buscar', [])->html();
+} elseif ($_instance->childHasBeenRendered('9OzVkow')) {
+    $componentId = $_instance->getRenderedChildComponentId('9OzVkow');
+    $componentTag = $_instance->getRenderedChildComponentTagName('9OzVkow');
+    $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
+    $_instance->preserveRenderedChild('9OzVkow');
+} else {
+    $response = \Livewire\Livewire::mount('buscar', []);
+    $html = $response->html();
+    $_instance->logRenderedChild('9OzVkow', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+}
+echo $html;
+?>
         </div>
         <div class="ir-arriba" id="ir-arriba">
             <i class="fas fa-angle-up"></i>
@@ -47,6 +33,8 @@
     </div>
 
     <!--Script -->
+    <?php echo \Livewire\Livewire::scripts(); ?>
+
     <script src="<?php echo e(asset('js/home.js')); ?>"></script>
     <?php echo $__env->yieldContent('scriptFooter'); ?>
 </body>

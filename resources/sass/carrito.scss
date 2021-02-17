@@ -1,0 +1,148 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    background: #fff;
+}
+
+.title-inform {
+    font-family: ModernSans, Arial, Helvetica, sans-serif;
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    margin: 2rem;
+}
+
+.content {
+    grid-area: content;
+    background: #fff;
+    text-align: left;
+    padding: 2rem 0;
+    margin: 10px;
+}
+
+.cart-info {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+}
+
+.yComponentWrapper {
+    border: 1px solid #eee;
+    border-radius: 20px;
+    width: 80%;
+    padding-top: 10px;
+    margin-top: 10px;
+}
+
+.cart-item-list,
+.row {
+    padding: 15px;
+}
+
+.item__image {
+    display: flex;
+    justify-content: center;
+    img {
+        margin: 20px 0;
+        align-items: center;
+        width: 110px;
+        height: 110px;
+    }
+}
+
+.contenedor-btn {
+    display: block;
+    width: 100%;
+}
+
+.buscar-btn {
+    display: block;
+    background: #000;
+    width: 100%;
+    font-size: .9rem;
+    height: 40px;
+    color: #fff;
+    text-decoration: none;
+    border: none;
+    text-align: center;
+    border-radius: 9px;
+    margin-top: .5rem;
+    margin-bottom: .5rem;
+    outline: none;
+    cursor: pointer;
+    a {
+        display: block;
+        width: 100%;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+.buscar-btn:hover {
+    background: #555555;
+    box-shadow: 1px 1px 5px #555555;
+}
+
+.item__interactions__button {
+    .icon-bin {
+        visibility: hidden;
+        color: red;
+    }
+}
+
+.cel_item__interactions__button {
+    .icon-bin {
+        color: red;
+        cursor: pointer;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 991.98px) {
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+@media (min-width: 992px) {
+    .contenedor-btn {
+        display: flex;
+        justify-content: center;
+    }
+    .buscar-btn {
+        width: 20%;
+        font-size: 1rem;
+        height: 40px;
+        border-radius: 9px;
+        margin-top: 1rem;
+        margin-bottom: .5rem;
+        margin-right: 20px;
+        cursor: pointer;
+        a {
+            display: block;
+            height: 40px;
+            line-height: 40px;
+        }
+    }
+    .yComponentWrapper {
+        width: 70%;
+    }
+    .item__list--item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .item__main {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+    .item__info {
+        width: 12rem;
+        margin-left: 1.5rem;
+    }
+}

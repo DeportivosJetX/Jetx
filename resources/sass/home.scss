@@ -2,29 +2,26 @@
 
 .content-home {
     grid-area: content;
-    // display: grid;
-    // grid-template-columns: 100%;
-    // grid-template-rows: 150px auto;
-    // grid-template-areas: "slider""homeContent";
+    margin: 1rem 0;
+    padding: 0 1rem;
 }
 
 
 /*---------content--------------*/
 
 .contenedor .content {
-    grid-area: homeContent;
+    width: 100%;
+    height: 100%;
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 2) - 10px)));
     grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 2) - 10px)));
-    gap: .8rem;
-    margin: 1rem 0;
-    padding: 0 1rem;
+    gap: 1.2rem .8rem;
     place-content: center;
-    place-items: stretch;
+    place-items: center;
     .imgcat {
         position: relative;
-        width: 150px;
-        height: 150px;
+        width: 100%;
+        height: 100%;
         overflow: hidden;
         .imgcat-link {
             display: block;
@@ -82,25 +79,14 @@
 
 @media (min-width: 576px) and (max-width: 991.98px) {
     .content-home {
-        grid-template-rows: 180px auto;
+        margin: 2.5rem 0 3.5rem 0;
     }
-    /*---------slider--------------*/
-    // .carousel__contenedor {
-    //     width: 94%;
-    // }
-    // .carousel__lista {
-    //     height: 93%;
-    // }
-    // .carousel__indicadores {
-    //     height: 7%;
-    // }
     /*---------content--------------*/
     .contenedor .content {
-        grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 2) - 10px)));
-        grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 2) - 10px)));
+        grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 2) - 5rem)));
+        grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 2) - 5rem)));
+        gap: 4rem 4rem;
         .imgcat {
-            width: 300px;
-            height: 300px;
             .imgcat-link {
                 .overlay {
                     .text {
@@ -112,44 +98,48 @@
     }
 }
 
-@media (min-width: 992px) {
-    /*---------main content--------------*/
+@media (min-width: 992px) and (max-width: 1199.98px) {
     .content-home {
-        grid-template-rows: 250px auto;
+        margin: 3rem 0 4rem 0;
     }
-    /*---------slider--------------*/
-    // .carousel__contenedor {
-    //     width: 95%;
-    // }
-    // .carousel__anterior,
-    // .carousel__siguiente {
-    //     top: 45%;
-    // }
-    // .carousel__anterior .fas,
-    // .carousel__siguiente .fas {
-    //     font-size: 1.5em;
-    // }
-    // .carousel__anterior {
-    //     left: -2em;
-    // }
-    // .carousel__siguiente {
-    //     right: -2em;
-    // }
-    // .carousel__lista {
-    //     height: 95%;
-    // }
-    // .carousel__indicadores {
-    //     height: 5%;
-    // }
     /*---------content--------------*/
     .contenedor .content {
-        grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 2) - 6rem)));
-        grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 2) - 6rem)));
-        gap: 2rem 3rem;
-        margin: 3rem 0;
+        grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 2) - 7rem)));
+        grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 2) - 7rem)));
+        gap: calc(2.5rem + 15px) calc(2rem + 15px);
         .imgcat {
-            width: 450px;
-            height: 450px;
+            .imgcat-link {
+                &:hover .imgcat__img {
+                    transform: scale(1.2);
+                }
+                .imgcat__img {
+                    transform: scale(1);
+                    transition: all .5s ease;
+                }
+                .overlay {
+                    left: 50%;
+                    width: 50%;
+                    .text {
+                        font-size: .9rem;
+                        text-shadow: .1px .1px 2.5px #e6a926;
+                        letter-spacing: .2em;
+                    }
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 1200px) {
+    .content-home {
+        margin: 3.5rem 0 4.5rem 0;
+    }
+    /*---------content--------------*/
+    .contenedor .content {
+        grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 4) - 3rem)));
+        grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 4) - 3rem)));
+        gap: 2rem 2rem;
+        .imgcat {
             .imgcat-link {
                 &:hover .imgcat__img {
                     transform: scale(1.2);

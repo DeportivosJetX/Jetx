@@ -7,19 +7,31 @@
         <div class="scroll-menu-main">
             <ul id="menu-main" class="menu-main menu">
                 <li class="menu-item active"><a href="{{ route('home') }}"><span>Home</span></a></li>
-                @if(session()->has('categoria'))
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-producto"><span>Patinaje</span><i class="fas fa-angle-double-right"></i></a></li>
+                <li class="menu-item"><a href="{{ route('productos.index') }}" class="menu-main__link"><span>Productos</span></a></li>
+                @if(session()->has('deportes'))
+                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-producto"><span>Deportes</span><i class="fas fa-angle-double-right"></i></a></li>
                 @endif
-                @if(session()->has('coleccion'))
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Fútbol</span><i class="fas fa-angle-double-right"></i></a></li>
+                @if(session()->has('categorias'))
+                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Categorias</span><i class="fas fa-angle-double-right"></i></a></li>
                 @endif
-                @if(session()->has('coleccion'))
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Baloncesto</span><i class="fas fa-angle-double-right"></i></a></li>
-                @endif
-                @if(session()->has('coleccion'))
-                    <li class="menu-item"><a href="javascript:void(0);" class="menu-main__link" id="item-coleccion"><span>Tennis</span><i class="fas fa-angle-double-right"></i></a></li>
-                @endif
-                <li class="menu-item iniciar-sesion"><a href="#"><span>Iniciar Sesión / Registro</span></a></li>
+                @auth
+                <li class="menu-item"><a href="{{ route('rotacion') }}" class="menu-main__link"><span>Informe de Rotación</span></a></li>
+                <li class="menu-item"><a href="{{ route('ingresos') }}" class="menu-main__link"><span>Informe de Ingresos</span></a></li>
+                <li class="menu-item">
+                    <form method="POST" action="{{ route('logout') }}">
+                        @csrf
+
+                        <x-dropdown-link :href="route('logout')" class="menu-main__link"
+                                onclick="event.preventDefault();
+                                            this.closest('form').submit();">
+                            {{ __('Logout') }}
+                        </x-dropdown-link>
+                    </form>
+                </li>
+                @endauth
+                @guest
+                <li class="menu-item iniciar-sesion"><a href="{{ route('login') }}"><span>Iniciar Sesión / Registro</span></a></li>
+                @endguest
             </ul>
         </div>
         <div class="menu-categoria" id="menu-categoria">
@@ -28,15 +40,15 @@
             </div>
             <div class="contenedor-scroll">
                 <div class="menu-cat-contenedor">
-                    @if(session()->has('categoria'))
-                    @forelse(session('categoria') as $categoria)
-                    <a href="{{ route('productos.indexCategoria',$categoria) }}" class="menu-link" style="background-image: url('/storage/{{ $categoria->imagen }}');">
+                    @if(session()->has('deportes'))
+                    @forelse(session('deportes') as $deporte)
+                    <a href="{{ route('productos.indexDeporte',$deporte) }}" class="menu-link" style="background-image: url('/storage/{{ $deporte->imagen }}');">
                         <div class="menu-link__title">
-                            <h3>{{ strtoupper($categoria->nombre) }}</h3>
+                            <h3>{{ strtoupper($deporte->nombre) }}</h3>
                         </div>
                     </a>
                     @empty
-                        No hay categorías
+                        No hay deportes
                     @endforelse
                     @endif
                 </div>
@@ -48,15 +60,15 @@
             </div>
             <div class="contenedor-scroll">
                 <div class="menu-cat-contenedor">
-                    @if(session()->has('coleccion'))
-                    @forelse(session('coleccion') as $coleccion)
-                    <a href="{{ route('productos.indexColeccion',$coleccion) }}" class="menu-link" style="background-image: url('/storage/{{ $coleccion->imagen }}');">
+                    @if(session()->has('categorias'))
+                    @forelse(session('categorias') as $categoria)
+                    <a href="{{ route('productos.indexCategoria',$categoria) }}" class="menu-link" style="background-image: url('/storage/{{ $categoria->imagen }}');">
                         <div class="menu-link__title">
-                            <h3>{{ strtoupper($coleccion->nombre) }}</h3>
+                            <h3>{{ strtoupper($categoria->nombre) }}</h3>
                         </div>
                     </a>
                     @empty
-                        No hay colecciones
+                        No hay categorias
                     @endforelse
                     @endif
                 </div>

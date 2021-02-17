@@ -20,10 +20,6 @@
                     <input type="text" class="form-input input-registro" placeholder="Nombre" id="nombre">
                 </div>
                 <div class="form-datos">
-                    <input type="text" class="form-input input-registro" placeholder="Apellido" id="apellido">
-                </div>
-
-                <div class="form-datos">
                     <input type="text" class="form-input input-registro" placeholder="Nro identificación"
                         id="identificacion">
                 </div>
@@ -64,6 +60,10 @@
                     <input type="submit" class="btn-enviar" value="Crear cuenta">
                 </div>
             </fieldset>
+            <div class="bottom-text">
+                <div>¿Ya estás registrado?</div>
+                <a class="link" href="{{ route('login') }}">Entra aquí</a>
+            </div>
         </form>
     </div>
 @endsection

@@ -3,52 +3,29 @@
 @section('title', 'HOME')
 @section('css')
     <link rel="stylesheet" href="{{ asset('css/home.css') }}">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
 @endsection
 @section('scriptHeader')
 
 @endsection
 
 @section('contenido')
-    <div class="content-home">
+    <main class="content-home">
         <div class="content">
+            @isset($message)
+                <span class="mt:4 mb:2">{{$message}}</span>
+            @endisset
+            @forelse(session('deportes') as $deporte)
+            <div class="imgcat">
+                <a href="{{ route('productos.indexDeporte',$deporte) }}" class="imgcat-link">
+                    <img loading="lazy" class="imgcat__img" src="{{ Storage::url($deporte->imagen) }}" alt="{{ $deporte->descripcion_img }}">
+                    <div class="overlay">
+                        <p class="text">{{ $deporte->nombre }}</p>
+                    </div>
+                </a>
+            </div>
+            @empty
 
-            <div class="imgcat">
-                <a href="" class="imgcat-link">
-                    <img loading="lazy" class="imgcat__img" src="../storage/images/deportes/patinaje.jpg" alt="">
-                    <div class="overlay">
-                        <p class="text">Patinaje</p>
-                    </div>
-                </a>
-            </div>
-            <div class="imgcat">
-                <a href="" class="imgcat-link">
-                    <img loading="lazy" class="imgcat__img" src="../storage/images/deportes/futbol.jpg" alt="">
-                    <div class="overlay">
-                        <p class="text">Fútbol</p>
-                    </div>
-                </a>
-            </div>
-            <div class="imgcat">
-                <a href="" class="imgcat-link">
-                    <img loading="lazy" class="imgcat__img" src="../storage/images/deportes/baloncesto.jpg" alt="">
-                    <div class="overlay">
-                        <p class="text">Baloncesto</p>
-                    </div>
-                </a>
-            </div>
-            <div class="imgcat">
-                <a href="" class="imgcat-link">
-                    <img loading="lazy" class="imgcat__img" src="../storage/images/deportes/tennis.jpg" alt="">
-                    <div class="overlay">
-                        <p class="text">Tennis</p>
-                    </div>
-                </a>
-            </div>
+            @endforelse
         </div>
-    </div>
-@endsection
-@section('scriptFooter')
-    <script src="{{ asset('js/algo.js') }}"></script>
+    </main>
 @endsection

@@ -15,13 +15,13 @@ class CreateTallaProductosTable extends Migration
     {
         Schema::create('talla_productos', function (Blueprint $table) {
             $table->id();
-            $table->unsignedBigInteger('id_produto');
+            $table->unsignedBigInteger('id_producto');
             $table->unsignedTinyInteger('id_talla');
             $table->smallInteger('stock')->default(0);
             $table->enum('estado', ['no disponible', 'disponible'])->default('no disponible');
             $table->softDeletes('deleted_at', 0);
             $table->timestamps();
-            $table->foreign('id_produto')->references('id')->on('productos');
+            $table->foreign('id_producto')->references('id')->on('productos');
             $table->foreign('id_talla')->references('id')->on('tallas');
         });
     }

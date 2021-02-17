@@ -1,0 +1,107 @@
+body {
+    font-style: normal;
+    font-family: ModernSans, sans-serif;
+    font-weight: 600;
+    font-size: 17px;
+    position: relative;
+    min-width: 100%;
+}
+
+.contenedor {
+    min-height: 100vh;
+    min-width: 100vw;
+    max-width: 100vw;
+    overflow: hidden;
+    padding: 1rem 2rem 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.contenedor-error {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.svgError {
+    width: 190px;
+    img {
+        max-width: 100%;
+        object-fit: contain;
+    }
+}
+
+.message {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+.inicio {
+    text-align: center;
+    display: block;
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    text-decoration: none;
+    color: #fff;
+    background: #000;
+    border-radius: 10px;
+    transition: all .5s ease;
+    &:hover {
+        transform: scale(1.01);
+        background-color: rgba(0, 0, 0, 0.699);
+        cursor: pointer;
+    }
+}
+
+.footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 3rem;
+    img {
+        object-fit: cover;
+        object-position: top;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) {}
+
+
+/* Medium devices (tablets, 768px and up) */
+
+@media (min-width: 768px) and (max-width: 991.98px) {}
+
+
+/* Large devices (desktops, 992px and up) */
+
+@media (min-width: 992px) and (max-width: 1199.98px) {
+    .svgError {
+        width: 200px;
+    }
+    .footer {
+        height: 5rem;
+    }
+}
+
+
+/* Extra large devices (large desktops, 1200px and up) */
+
+@media (min-width: 1200px) {
+    .svgError {
+        width: 200px;
+    }
+    .footer {
+        height: 5rem;
+    }
+}

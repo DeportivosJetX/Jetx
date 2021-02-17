@@ -1,10 +1,18 @@
 {
     "/js/app.js": "/js/app.js",
+    "/js/home.js": "/js/home.js",
+    "/js/filtrarProducto.js": "/js/filtrarProducto.js",
+    "/js/detalleProducto.js": "/js/detalleProducto.js",
+    "/js/sliderDetalle.js": "/js/sliderDetalle.js",
     "/css/app1.css": "/css/app1.css",
-    "/css/home.css": "/css/home.css",
     "/css/ingresos.css": "/css/ingresos.css",
+    "/css/carrito.css": "/css/carrito.css",
     "/css/login.css": "/css/login.css",
     "/css/rotacion.css": "/css/rotacion.css",
     "/css/app.css": "/css/app.css",
+    "/css/home.css": "/css/home.css",
+    "/css/detalle.css": "/css/detalle.css",
+    "/css/productos.css": "/css/productos.css",
+    "/css/errors.css": "/css/errors.css",
     "/js/Chart.min.js": "/js/Chart.min.js"
 }
