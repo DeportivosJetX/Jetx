@@ -62,7 +62,7 @@
                                     'Septiembre', 'Octubre', 'Noviembre', 'Diciembre'
                                 ],
                                 datasets: [{
-                                    label: 'Ganancias',
+                                    label: 'Ingresos',
                                     borderColor: 'blue',
                                     data: [7, 8, 5, 2, 8, 10, 7, 0, 4, 90, 0, 5]
                                 }]

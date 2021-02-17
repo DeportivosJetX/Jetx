@@ -19039,6 +19039,19 @@ var __WEBPACK_AMD_DEFINE_RESULT__;/**
 
 /***/ }),
 
+/***/ "./resources/css/app.css":
+/*!*******************************!*\
+  !*** ./resources/css/app.css ***!
+  \*******************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/app1.scss":
 /*!**********************************!*\
   !*** ./resources/sass/app1.scss ***!
@@ -19065,6 +19078,19 @@ __webpack_require__.r(__webpack_exports__);
 
 /***/ }),
 
+/***/ "./resources/sass/login.scss":
+/*!***********************************!*\
+  !*** ./resources/sass/login.scss ***!
+  \***********************************/
+/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+// extracted by mini-css-extract-plugin
+
+
+/***/ }),
+
 /***/ "./resources/sass/ingresos.scss":
 /*!**************************************!*\
   !*** ./resources/sass/ingresos.scss ***!
@@ -19082,19 +19108,6 @@ __webpack_require__.r(__webpack_exports__);
 /*!**********************************!*\
   !*** ./resources/sass/home.scss ***!
   \**********************************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-// extracted by mini-css-extract-plugin
-
-
-/***/ }),
-
-/***/ "./resources/css/app.css":
-/*!*******************************!*\
-  !*** ./resources/css/app.css ***!
-  \*******************************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
 "use strict";
@@ -19385,6 +19398,7 @@ process.umask = function() { return 0; };
 /******/ 			["./resources/js/app.js"],
 /******/ 			["./resources/sass/app1.scss"],
 /******/ 			["./resources/sass/rotacion.scss"],
+/******/ 			["./resources/sass/login.scss"],
 /******/ 			["./resources/sass/ingresos.scss"],
 /******/ 			["./resources/sass/home.scss"],
 /******/ 			["./resources/css/app.css"]

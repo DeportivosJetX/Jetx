@@ -17,6 +17,7 @@ mix.js('resources/js/app.js', 'public/js')
     ])
     .sass('resources/sass/app1.scss', 'public/css')
     .sass('resources/sass/rotacion.scss', 'public/css')
+    .sass('resources/sass/login.scss', 'public/css')
     .sass('resources/sass/ingresos.scss', 'public/css')
     .copy('node_modules/chart.js/dist/Chart.min.js', 'public/js')
     .sass('resources/sass/home.scss', 'public/css');

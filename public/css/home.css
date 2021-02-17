@@ -1,116 +1,6 @@
 /*---------contenido del main--------------*/
 .content-home {
   grid-area: content;
-  display: grid;
-  grid-template-columns: 100%;
-  grid-template-rows: 150px auto;
-  grid-template-areas: "slider" "homeContent";
-}
-
-/*---------slider--------------*/
-.contenedor .carousel {
-  grid-area: slider;
-  background: #000;
-  overflow: hidden;
-  height: 100%;
-  width: 100%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.carousel__contenedor {
-  position: relative;
-  width: 90%;
-  height: 100%;
-}
-
-.carousel__anterior,
-.carousel__siguiente {
-  position: absolute;
-  display: block;
-  width: 2.5em;
-  height: 2.5em;
-  border: none;
-  top: calc(50% - 1.5em);
-  cursor: pointer;
-  line-height: 2.5em;
-  text-align: center;
-  background: none;
-  color: #fff;
-  opacity: 15%;
-}
-
-.carousel__anterior .fas,
-.carousel__siguiente .fas {
-  font-size: 1.3em;
-}
-
-.carousel__anterior:hover,
-.carousel__siguiente:hover {
-  opacity: 100%;
-}
-
-.carousel__anterior {
-  left: -1.8em;
-}
-
-.carousel__siguiente {
-  right: -1.8em;
-}
-
-.carousel__lista {
-  width: 100%;
-  padding-top: 0.7em;
-  height: 90%;
-  overflow: hidden;
-}
-
-.glider-track {
-  height: 100%;
-  width: 100%;
-}
-
-.carousel__indicadores {
-  height: 10%;
-  display: flex;
-  align-items: center;
-  align-content: center;
-  justify-content: center;
-}
-
-.carousel__elemento {
-  display: flex;
-  align-content: center;
-  justify-content: flex-start;
-}
-
-.carousel__indicadores .glider-dot {
-  display: block;
-  width: 2em;
-  height: 0.37em;
-  background: #fff;
-  opacity: 0.2;
-  border-radius: 0.2em;
-  line-height: 0.37em;
-  margin: 0 6px;
-}
-
-.carousel__indicadores .glider-dot:hover {
-  opacity: 0.5;
-}
-
-.carousel__indicadores .glider-dot.active {
-  opacity: 1;
-}
-
-.carousel__elemento img {
-  -o-object-fit: contain;
-     object-fit: contain;
-  -o-object-position: center;
-     object-position: center;
-  max-width: 100%;
 }
 
 /*---------content--------------*/
@@ -127,8 +17,8 @@
 }
 .contenedor .content .imgcat {
   position: relative;
-  width: 100%;
-  height: 100%;
+  width: 150px;
+  height: 150px;
   overflow: hidden;
 }
 .contenedor .content .imgcat .imgcat-link {
@@ -181,182 +71,42 @@
 
 /*---------media--------------*/
 /* Small devices (landscape phones, 576px and up) */
-@media (min-width: 576px) and (max-width: 767.98px) {
+@media (min-width: 576px) and (max-width: 991.98px) {
   .content-home {
     grid-template-rows: 180px auto;
   }
 
   /*---------slider--------------*/
-  .carousel__contenedor {
-    width: 94%;
-  }
-
-  .carousel__lista {
-    height: 93%;
-  }
-
-  .carousel__indicadores {
-    height: 7%;
-  }
-
   /*---------content--------------*/
   .contenedor .content {
-    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 3) - 10px)));
-    grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 3) - 10px)));
+    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 2) - 10px)));
+    grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 2) - 10px)));
+  }
+  .contenedor .content .imgcat {
+    width: 300px;
+    height: 300px;
   }
   .contenedor .content .imgcat .imgcat-link .overlay .text {
     font-size: 0.8rem;
   }
 }
-/* Medium devices (tablets, 768px and up) */
-@media (min-width: 768px) and (max-width: 991.98px) {
+@media (min-width: 992px) {
   /*---------main content--------------*/
   .content-home {
     grid-template-rows: 250px auto;
   }
 
   /*---------slider--------------*/
-  .carousel__contenedor {
-    width: 94%;
-  }
-
-  .carousel__anterior .fas,
-.carousel__siguiente .fas {
-    font-size: 1.5em;
-  }
-
-  .carousel__anterior {
-    left: -1.9em;
-  }
-
-  .carousel__siguiente {
-    right: -1.9em;
-  }
-
-  .carousel__lista {
-    height: 93%;
-  }
-
-  .carousel__indicadores {
-    height: 7%;
-  }
-
   /*---------content--------------*/
   .contenedor .content {
-    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 3) - 10px)));
-    grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 3) - 10px)));
-  }
-  .contenedor .content .imgcat .imgcat-link .overlay .text {
-    font-size: 0.91rem;
-    letter-spacing: 0.2em;
-  }
-}
-/* Large devices (desktops, 992px and up) */
-@media (min-width: 992px) and (max-width: 1199.98px) {
-  /*---------main content--------------*/
-  .content-home {
-    grid-template-rows: 270px auto;
-  }
-
-  /*---------slider--------------*/
-  .carousel__contenedor {
-    width: 95%;
-  }
-
-  .carousel__anterior,
-.carousel__siguiente {
-    top: 45%;
-  }
-
-  .carousel__anterior .fas,
-.carousel__siguiente .fas {
-    font-size: 1.5em;
-  }
-
-  .carousel__anterior {
-    left: -2em;
-  }
-
-  .carousel__siguiente {
-    right: -2em;
-  }
-
-  .carousel__lista {
-    height: 95%;
-  }
-
-  .carousel__indicadores {
-    height: 5%;
-  }
-
-  /*---------content--------------*/
-  .contenedor .content {
-    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 3) - 3.5rem)));
-    grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 3) - 3.5rem)));
+    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 2) - 6rem)));
+    grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 2) - 6rem)));
     gap: 2rem 3rem;
     margin: 3rem 0;
   }
-  .contenedor .content .imgcat .imgcat-link:hover .imgcat__img {
-    transform: scale(1.2);
-  }
-  .contenedor .content .imgcat .imgcat-link .imgcat__img {
-    transform: scale(1);
-    transition: all 0.5s ease;
-  }
-  .contenedor .content .imgcat .imgcat-link .overlay {
-    left: 50%;
-    width: 50%;
-  }
-  .contenedor .content .imgcat .imgcat-link .overlay .text {
-    font-size: 0.8rem;
-    text-shadow: 0.1px 0.1px 2.5px #e6a926;
-    letter-spacing: 0.2em;
-  }
-}
-/* Extra large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-  /*---------main content--------------*/
-  .content-home {
-    grid-template-rows: 250px auto;
-  }
-
-  /*---------slider--------------*/
-  .carousel__contenedor {
-    width: 95%;
-  }
-
-  .carousel__anterior,
-.carousel__siguiente {
-    top: 45%;
-  }
-
-  .carousel__anterior .fas,
-.carousel__siguiente .fas {
-    font-size: 1.5em;
-  }
-
-  .carousel__anterior {
-    left: -2em;
-  }
-
-  .carousel__siguiente {
-    right: -2em;
-  }
-
-  .carousel__lista {
-    height: 95%;
-  }
-
-  .carousel__indicadores {
-    height: 5%;
-  }
-
-  /*---------content--------------*/
-  .contenedor .content {
-    grid-template-columns: repeat(auto-fit, minmax(136px, calc((100% / 3) - 6rem)));
-    grid-template-rows: repeat(auto-fit, minmax(136px, calc((100vw / 3) - 6rem)));
-    gap: 2rem 3rem;
-    margin: 3rem 0;
+  .contenedor .content .imgcat {
+    width: 450px;
+    height: 450px;
   }
   .contenedor .content .imgcat .imgcat-link:hover .imgcat__img {
     transform: scale(1.2);
