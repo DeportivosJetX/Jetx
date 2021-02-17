@@ -34,6 +34,7 @@
                 type="number"
                 id="año"
                 class="tabla-input"
+                min="0"
                 title="año"
                 wire:model="filtros">
             </div>

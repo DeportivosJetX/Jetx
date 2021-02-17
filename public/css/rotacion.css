@@ -60,6 +60,12 @@ h3 {
   border-radius: 15px;
   margin-bottom: 1rem;
 }
+.itm__datos .tabla-input {
+  border-radius: 7px;
+  border: 1px solid #333;
+  height: 1.7rem;
+  padding: 0.1rem;
+}
 
 .itm div:first-child {
   padding-right: 1rem;
@@ -312,13 +318,6 @@ td {
   font-weight: 900;
   font-size: 1.2rem;
   text-align: center !important;
-}
-
-input {
-  border: 1px solid #333;
-  border-radius: 5px;
-  height: 1.5rem;
-  padding: 0.1rem;
 }
 
 input:focus {

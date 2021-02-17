@@ -18,7 +18,11 @@
             <div class="icono__car">
                 <a id="link-carrito" class="fas-link" href="javascript:void(0)" title="Ver su carrito de compras">
                     <i class="fas fa-shopping-cart"></i>
+                    <?php if(session()->has('carrito')): ?>
+                    <span class=""><?php echo e(count(session('carrito'))); ?></span>
+                    <?php else: ?>
                     <span class="">0</span>
+                    <?php endif; ?>
                 </a>
             </div>
             <?php if(auth()->guard()->check()): ?>

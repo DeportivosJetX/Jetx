@@ -79,7 +79,7 @@
                 {{-- <form method="post" action="{{ route('carrito.store') }}" accept-charset="utf-8" enctype="multipart/form-data"> --}}
                 <form method="post" action="{{ route('carrito.store',$productos) }}" accept-charset="utf-8" enctype="multipart/form-data">
                     @csrf
-                    <select name="id_talla" id="product-select" class="hidden">
+                    <select name="id_talla" id="product-select" class="hiddenn">
                         @foreach($productos->tallas as $talla)
                         @if($talla->tallaProducto->estado == 'disponible')
                         <option value="{{ $talla->id }}" data-value="{{ $talla->id  }}" data-cantidad="{{ $talla->tallaProducto->stock }}">{{ $talla->nombre }}</option>
@@ -104,19 +104,7 @@
                         </ul>
                         @endif
                     </div>
-                    <!-- <div class="Cantidad">
-                        <form action="/action_page.php">
-                         <label for="cantidad">Cantidad:</label><br>
-                         <input type="number" max="{{ $productos->cantidad }}" min="1" id="cantidad" name="cantidad" value="1"><br><br>
-                        <input type="submit" value="Agregar al carrito" class="guiaTallas">
-                        <input type="hidden" value="{{ $productos->nombre }}" id="nombre"class="guiaTallas">
-                        <input type="hidden" value="{{ $productos->talla }}" id="talla" class="guiaTallas">
-                        <input type="hidden" value="{{ $productos->precio }}" id="precio" class="guiaTallas">
-                        <input type="hidden" value="{{ $productos->id }}" id="id" class="guiaTallas">
-                        </form>
-                    </div>
-                    <br/> -->
-
+                    <br/>
                     <div class="">
                         <p class="no-stock {{ tActive($productos->tallas[0]->tallaProducto->stock) }}" id="no-stock"><i class="fas fa-exclamation-circle"></i>Prenda No Disponible</p>
                         @if($productos->cantidad>=0)
@@ -127,7 +115,6 @@
                                     </a>
                                 </div>
                                 <input type="number" max="{{ $productos->tallas[0]->tallaProducto->stock }}" min="1" id="cantidad" name="cantidad" value="1" class="input-cantidad">
-                               
                                 <div class="arriba-abajo mas">
                                     <a class="cantidad-arriba cantidad-botones fas fa-angle-up" id="cantida-up">
                                     </a>

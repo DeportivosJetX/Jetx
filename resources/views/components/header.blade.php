@@ -23,7 +23,6 @@
                     @else
                     <span class="">0</span>
                     @endif
-                    
                 </a>
             </div>
             @auth

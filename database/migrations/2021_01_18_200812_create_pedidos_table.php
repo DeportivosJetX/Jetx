@@ -19,7 +19,7 @@ class CreatePedidosTable extends Migration
             $table->char('cedula',10);
             $table->string('telefono',10);
             $table->string('direccion',70);
-            $table->string('especificacion',50);
+            $table->string('especificacion',50)->nullable();
             $table->decimal('costo_envio', 10, 0);
             $table->enum('estado', ['no enviado', 'enviado', 'recibido']);
             $table->char('nro_seguimiento',15)->nullable();

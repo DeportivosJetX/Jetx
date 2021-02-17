@@ -7,13 +7,13 @@ var openGuia = document.getElementById('guiaTallas');
 var modalGuia = document.getElementById('modal-guia');
 var closeModal = document.getElementById('close-modal-guia');
 var selecTalla = document.getElementById('product-select');
-var listItems = document.querySelectorAll('.talla-lista__item'); // const cantAdd = document.querySelector('.cantidad-agregar');
+var listItems = document.querySelectorAll('.talla-lista__item');
+var cantAdd = document.querySelector('.cantidad-agregar');
+var noDisponible = document.getElementById('no-stock');
+var cantidadUp = document.getElementById('cantida-up');
+var cantidadDown = document.getElementById('cantida-down'); // const contactanos = document.getElementById('contactanos');
 
-var noDisponible = document.getElementById('no-stock'); // const cantidadUp = document.getElementById('cantida-up');
-// const cantidadDown = document.getElementById('cantida-down');
-// const contactanos = document.getElementById('contactanos');
-// const inputCantidad = document.getElementById('cantidad');
-
+var inputCantidad = document.getElementById('cantidad');
 var showTalla = document.getElementById('selected-talla'); //abrir modal de guía de tallas
 
 openGuia.addEventListener('click', function () {
@@ -35,22 +35,22 @@ listItems.forEach(function (item) {
       var estado = item.getAttribute('data-cantidad');
 
       if (estado == 0) {
-        // cantAdd.classList.add('hidden');
+        cantAdd.classList.add('hidden');
         stock.classList.add('sin-stock');
         stock.classList.remove('con-stock');
-        noDisponible.classList.add('active'); // contactanos.classList.add('active');
-        // inputCantidad.max = item.getAttribute('data-cantidad');
-        // inputCantidad.value = 0;
-
+        noDisponible.classList.add('active');
+        contactanos.classList.add('active');
+        inputCantidad.max = item.getAttribute('data-cantidad');
+        inputCantidad.value = 0;
         showTalla.textContent = item.getAttribute('data-text');
       } else if (estado > 0) {
-        // cantAdd.classList.remove('hidden');
-        // contactanos.classList.remove('active');
+        cantAdd.classList.remove('hidden');
+        contactanos.classList.remove('active');
         noDisponible.classList.remove('active');
         stock.classList.remove('sin-stock');
-        stock.classList.add('con-stock'); // inputCantidad.max = item.getAttribute('data-cantidad');
-        // inputCantidad.value = 1;
-
+        stock.classList.add('con-stock');
+        inputCantidad.max = item.getAttribute('data-cantidad');
+        inputCantidad.value = 1;
         showTalla.textContent = item.getAttribute('data-text');
       }
 
@@ -58,17 +58,20 @@ listItems.forEach(function (item) {
       item.classList.add('active');
     }
   });
-}); // cantidadUp.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     if (inputCantidad.value != inputCantidad.max) {
-//         inputCantidad.value = parseInt(inputCantidad.value) + 1;
-//     }
-// })
-// cantidadDown.addEventListener('click', (e) => {
-//     e.preventDefault();
-//     if (inputCantidad.value != inputCantidad.min) {
-//         inputCantidad.value = parseInt(inputCantidad.value) - 1;
-//     }
-// })
+});
+cantidadUp.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (inputCantidad.value != inputCantidad.max) {
+    inputCantidad.value = parseInt(inputCantidad.value) + 1;
+  }
+});
+cantidadDown.addEventListener('click', function (e) {
+  e.preventDefault();
+
+  if (inputCantidad.value != inputCantidad.min) {
+    inputCantidad.value = parseInt(inputCantidad.value) - 1;
+  }
+});
 /******/ })()
 ;
