@@ -5233,6 +5233,7 @@ body {
   outline: none;
   font-size: 0.8rem;
   letter-spacing: 0;
+  padding: 0;
 }
 .busqueda .busqueda__header .busqueda__input label {
   width: 10%;

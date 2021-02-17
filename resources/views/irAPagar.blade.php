@@ -2,8 +2,6 @@
 
 @section('title','Confirmar pedido')
 @section('css')
-<link rel="stylesheet" href="{{ asset('splide-2.4.12/dist/css/splide.min.css') }}" />
-<link rel="stylesheet" href="{{ asset('css/detalle.css') }}">
 <link rel="stylesheet" href="{{ asset('css/carrito.css') }}">
 
 <style>
@@ -65,37 +63,37 @@
                 <x-auth-validation-errors class="mb-4" :errors="$errors" />
                 <form method="POST" action="{{ route('pedido.store') }}" >
                     @csrf
-        
+
                     <!-- Name -->
                     <div>
                         <x-label for="name" :value="__('Name')" />
-        
+
                         <x-input id="name" class="block mt-1 w-full" type="text" name="name" :value="old('name',Auth::user()->name)"  autofocus />
                     </div>
-        
+
                     <!-- Identification -->
                     <div class="mt-4">
                         <x-label for="identification" :value="__('Identification')" />
-        
+
                         <x-input id="identification" class="block mt-1 w-full" type="text" name="identification" :value="old('identification',Auth::user()->identification)" />
                     </div>
-        
+
                     <!-- Adress -->
                     <div class="mt-4">
                         <x-label for="address" :value="__('Address')" />
-        
+
                         <x-input id="address" class="block mt-1 w-full" type="text" name="address" :value="old('address',Auth::user()->address)"  />
                     </div>
                     <div class="mt-4">
                         <x-label for="especificacion" :value="__('Especificación')" />
-        
+
                         <x-input id="especificacion" class="block mt-1 w-full" type="text" name="especificacion" :value="old('especificacion')"  />
                     </div>
-        
+
                     <livewire:departamento-ciudad />
                     <div class="mt-4">
                         <x-label for="telefono" :value="__('Telefono')" />
-        
+
                         <x-input id="telefono" class="block mt-1 w-full"
                                         type="tel"
                                         name="telefono"
@@ -112,7 +110,7 @@
                 <div class="yCmsComponent yComponentWrapper">
                     <div class="cart-item-list">
                         <ul class="item__list item__list__cart">
-                            @php 
+                            @php
                             $subtotal = 0;
                             @endphp
                             @if(session()->has('carrito'))
@@ -150,7 +148,7 @@
                                 <div class="item-column item__quantity">
                                     <div class="form-group red-arrow item__quantity__form">
                                         <label for="quantity0">
-                                            Cantidad: 
+                                            Cantidad:
                                         </label>
                                         <span class="plain-select">
                                             {{ $car['cantidad'] }}
@@ -184,9 +182,7 @@
             </div>
         </div>
     </div>
-    
 @endsection
-
 @section('scriptFooter')
     <script src="{{ asset('js/algo.js') }}"></script>
 @endsection
