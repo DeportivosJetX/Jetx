@@ -22,7 +22,7 @@ class CreateProductosTable extends Migration
             $table->decimal('descuento', 3, 2)->default(0);
             $table->text('descripcion');
             $table->string('guia_tallas_img',100)->nullable();
-            $table->enum('publico', ['hombres', 'mujeres', 'niños','unisex']);
+            $table->enum('publico', ['hombres', 'mujeres', 'niños','unisex','todos']);
             $table->enum('envio', ['gratis', 'calculado']);
             $table->unsignedTinyInteger('id_categoria');
             $table->unsignedTinyInteger('id_deporte');

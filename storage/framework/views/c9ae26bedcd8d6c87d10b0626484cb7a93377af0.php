@@ -1,5 +1,3 @@
-
-
 <?php $__env->startSection('title','Detalle Producto'); ?>
 <?php $__env->startSection('css'); ?>
 <link rel="stylesheet" href="<?php echo e(asset('splide-2.4.12/dist/css/splide.min.css')); ?>" />
@@ -80,7 +78,7 @@
                 
                 <form method="post" action="<?php echo e(route('carrito.store',$productos)); ?>" accept-charset="utf-8" enctype="multipart/form-data">
                     <?php echo csrf_field(); ?>
-                    <select name="id_talla" id="product-select" class="hidden">
+                    <select name="id_talla" id="product-select" class="hiddenn">
                         <?php $__currentLoopData = $productos->tallas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $talla): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
                         <?php if($talla->tallaProducto->estado == 'disponible'): ?>
                         <option value="<?php echo e($talla->id); ?>" data-value="<?php echo e($talla->id); ?>" data-cantidad="<?php echo e($talla->tallaProducto->stock); ?>"><?php echo e($talla->nombre); ?></option>
@@ -105,19 +103,8 @@
                         </ul>
                         <?php endif; ?>
                     </div>
-                    <!-- <div class="Cantidad">
-                        <form action="/action_page.php">
-                         <label for="cantidad">Cantidad:</label><br>
-                         <input type="number" max="<?php echo e($productos->cantidad); ?>" min="1" id="cantidad" name="cantidad" value="1"><br><br>
-                        <input type="submit" value="Agregar al carrito" class="guiaTallas">
-                        <input type="hidden" value="<?php echo e($productos->nombre); ?>" id="nombre"class="guiaTallas">
-                        <input type="hidden" value="<?php echo e($productos->talla); ?>" id="talla" class="guiaTallas">
-                        <input type="hidden" value="<?php echo e($productos->precio); ?>" id="precio" class="guiaTallas">
-                        <input type="hidden" value="<?php echo e($productos->id); ?>" id="id" class="guiaTallas">
-                        </form>
-                    </div>
-                    <br/> -->
-
+                    <br/>
+                    <br/>
                     <div class="">
                         <p class="no-stock <?php echo e(tActive($productos->tallas[0]->tallaProducto->stock)); ?>" id="no-stock"><i class="fas fa-exclamation-circle"></i>Prenda No Disponible</p>
                         <?php if($productos->cantidad>=0): ?>
@@ -128,7 +115,6 @@
                                     </a>
                                 </div>
                                 <input type="number" max="<?php echo e($productos->tallas[0]->tallaProducto->stock); ?>" min="1" id="cantidad" name="cantidad" value="1" class="input-cantidad">
-                               
                                 <div class="arriba-abajo mas">
                                     <a class="cantidad-arriba cantidad-botones fas fa-angle-up" id="cantida-up">
                                     </a>

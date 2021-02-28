@@ -11,6 +11,22 @@
     .content{
         grid-template-columns: 1fr;
     }
+    .agregar-carrito {
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    border-radius: 9px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease;
+    padding: 0 1rem;
+    &:hover {
+        transform: scale(0.98);
+        background-color: rgba(0, 0, 0, 0.767);
+    }
+}
     /* Create two equal columns that floats next to each other */
     .column{
         max-height: 600px;
@@ -18,7 +34,7 @@
         border: 1px solid #eee;
         border-radius: 20px;
     }
-    
+
     .item__list__cart{
         align-items: center;
         width: 100%;
@@ -45,7 +61,7 @@
         }
         .column {
          max-height: 300px;
-         margin-bottom: 2rem; 
+         margin-bottom: 2rem;
         }
     }
     </style>

@@ -16,15 +16,15 @@
         <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('grafica-ingresos', ['usuario' => Auth::user()->id,'filtro' => $filtro,'orderBy' => $orderBy,'filtros' => $filtro])->html();
-} elseif ($_instance->childHasBeenRendered('rn2ndzh')) {
-    $componentId = $_instance->getRenderedChildComponentId('rn2ndzh');
-    $componentTag = $_instance->getRenderedChildComponentTagName('rn2ndzh');
+} elseif ($_instance->childHasBeenRendered('ubWcF3o')) {
+    $componentId = $_instance->getRenderedChildComponentId('ubWcF3o');
+    $componentTag = $_instance->getRenderedChildComponentTagName('ubWcF3o');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('rn2ndzh');
+    $_instance->preserveRenderedChild('ubWcF3o');
 } else {
     $response = \Livewire\Livewire::mount('grafica-ingresos', ['usuario' => Auth::user()->id,'filtro' => $filtro,'orderBy' => $orderBy,'filtros' => $filtro]);
     $html = $response->html();
-    $_instance->logRenderedChild('rn2ndzh', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('ubWcF3o', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>

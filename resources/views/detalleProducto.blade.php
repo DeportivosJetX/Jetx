@@ -105,6 +105,7 @@
                         @endif
                     </div>
                     <br/>
+                    <br/>
                     <div class="">
                         <p class="no-stock {{ tActive($productos->tallas[0]->tallaProducto->stock) }}" id="no-stock"><i class="fas fa-exclamation-circle"></i>Prenda No Disponible</p>
                         @if($productos->cantidad>=0)

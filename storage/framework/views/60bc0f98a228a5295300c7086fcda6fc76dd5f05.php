@@ -23,10 +23,6 @@
                     <?php else: ?>
                     <span class="">0</span>
                     <?php endif; ?>
-<<<<<<< HEAD
-                    
-=======
->>>>>>> 25d954a73ed603203ed18c737c57576b034c7595
                 </a>
             </div>
             <?php if(auth()->guard()->check()): ?>

@@ -1,9 +1,5 @@
-
-
 <?php $__env->startSection('title','Confirmar pedido'); ?>
 <?php $__env->startSection('css'); ?>
-<link rel="stylesheet" href="<?php echo e(asset('splide-2.4.12/dist/css/splide.min.css')); ?>" />
-<link rel="stylesheet" href="<?php echo e(asset('css/detalle.css')); ?>">
 <link rel="stylesheet" href="<?php echo e(asset('css/carrito.css')); ?>">
 
 <style>
@@ -13,6 +9,22 @@
     .content{
         grid-template-columns: 1fr;
     }
+    .agregar-carrito {
+    background-color: #000;
+    color: #fff;
+    height: 40px;
+    border-radius: 9px;
+    text-align: center;
+    line-height: 40px;
+    border: none;
+    cursor: pointer;
+    transition: all .5s ease;
+    padding: 0 1rem;
+    &:hover {
+        transform: scale(0.98);
+        background-color: rgba(0, 0, 0, 0.767);
+    }
+}
     /* Create two equal columns that floats next to each other */
     .column{
         max-height: 600px;
@@ -20,7 +32,7 @@
         border: 1px solid #eee;
         border-radius: 20px;
     }
-    
+
     .item__list__cart{
         align-items: center;
         width: 100%;
@@ -47,7 +59,7 @@
         }
         .column {
          max-height: 300px;
-         margin-bottom: 2rem; 
+         margin-bottom: 2rem;
         }
     }
     </style>
@@ -76,7 +88,7 @@
 <?php endif; ?> 
                 <form method="POST" action="<?php echo e(route('pedido.store')); ?>" >
                     <?php echo csrf_field(); ?>
-        
+
                     <!-- Name -->
                     <div>
                          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
@@ -91,7 +103,7 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
-        
+
                          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.input','data' => ['id' => 'name','class' => 'block mt-1 w-full','type' => 'text','name' => 'name','value' => old('name',Auth::user()->name),'autofocus' => true]]); ?>
 <?php $component->withName('input'); ?>
@@ -105,7 +117,7 @@
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
                     </div>
-        
+
                     <!-- Identification -->
                     <div class="mt-4">
                          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
@@ -120,7 +132,7 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
-        
+
                          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.input','data' => ['id' => 'identification','class' => 'block mt-1 w-full','type' => 'text','name' => 'identification','value' => old('identification',Auth::user()->identification)]]); ?>
 <?php $component->withName('input'); ?>
@@ -134,7 +146,7 @@
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
                     </div>
-        
+
                     <!-- Adress -->
                     <div class="mt-4">
                          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
@@ -149,7 +161,7 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
-        
+
                          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.input','data' => ['id' => 'address','class' => 'block mt-1 w-full','type' => 'text','name' => 'address','value' => old('address',Auth::user()->address)]]); ?>
 <?php $component->withName('input'); ?>
@@ -176,7 +188,7 @@
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
-        
+
                          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.input','data' => ['id' => 'especificacion','class' => 'block mt-1 w-full','type' => 'text','name' => 'especificacion','value' => old('especificacion')]]); ?>
 <?php $component->withName('input'); ?>
@@ -190,19 +202,19 @@
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
                     </div>
-        
+
                     <?php
 if (! isset($_instance)) {
     $html = \Livewire\Livewire::mount('departamento-ciudad', [])->html();
-} elseif ($_instance->childHasBeenRendered('cVhOZJQ')) {
-    $componentId = $_instance->getRenderedChildComponentId('cVhOZJQ');
-    $componentTag = $_instance->getRenderedChildComponentTagName('cVhOZJQ');
+} elseif ($_instance->childHasBeenRendered('NhioUMp')) {
+    $componentId = $_instance->getRenderedChildComponentId('NhioUMp');
+    $componentTag = $_instance->getRenderedChildComponentTagName('NhioUMp');
     $html = \Livewire\Livewire::dummyMount($componentId, $componentTag);
-    $_instance->preserveRenderedChild('cVhOZJQ');
+    $_instance->preserveRenderedChild('NhioUMp');
 } else {
     $response = \Livewire\Livewire::mount('departamento-ciudad', []);
     $html = $response->html();
-    $_instance->logRenderedChild('cVhOZJQ', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
+    $_instance->logRenderedChild('NhioUMp', $response->id(), \Livewire\Livewire::getRootElementTagName($html));
 }
 echo $html;
 ?>
@@ -219,7 +231,7 @@ echo $html;
 <?php endif; ?>
 <?php echo $__env->renderComponent(); ?>
 <?php endif; ?> 
-        
+
                          <?php if (isset($component)) { $__componentOriginalc254754b9d5db91d5165876f9d051922ca0066f4 = $component; } ?>
 <?php $component = $__env->getContainer()->make(Illuminate\View\AnonymousComponent::class, ['view' => 'components.input','data' => ['id' => 'telefono','class' => 'block mt-1 w-full','type' => 'tel','name' => 'telefono','value' => old('telefono')]]); ?>
 <?php $component->withName('input'); ?>
@@ -244,7 +256,7 @@ echo $html;
                 <div class="yCmsComponent yComponentWrapper">
                     <div class="cart-item-list">
                         <ul class="item__list item__list__cart">
-                            <?php 
+                            <?php
                             $subtotal = 0;
                             ?>
                             <?php if(session()->has('carrito')): ?>
@@ -283,7 +295,7 @@ echo $html;
                                 <div class="item-column item__quantity">
                                     <div class="form-group red-arrow item__quantity__form">
                                         <label for="quantity0">
-                                            Cantidad: 
+                                            Cantidad:
                                         </label>
                                         <span class="plain-select">
                                             <?php echo e($car['cantidad']); ?>
@@ -319,10 +331,9 @@ echo $html;
             </div>
         </div>
     </div>
-    
 <?php $__env->stopSection(); ?>
-
 <?php $__env->startSection('scriptFooter'); ?>
     <script src="<?php echo e(asset('js/algo.js')); ?>"></script>
 <?php $__env->stopSection(); ?>
+
 <?php echo $__env->make('layouts/layout', \Illuminate\Support\Arr::except(get_defined_vars(), ['__data', '__path']))->render(); ?><?php /**PATH C:\www\jetx\resources\views/irAPagar.blade.php ENDPATH**/ ?>
